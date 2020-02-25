@@ -1,0 +1,4 @@
+
+openYandex();
+
+export default openYandex;

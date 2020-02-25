@@ -1,0 +1,5 @@
+
+
+openGoogle();
+
+export default openGoogle;
