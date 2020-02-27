@@ -2,7 +2,10 @@
     grid-area: h;
     background-color: #bca9f3;
 }
+
 .header img {
     width: 40px;
+    position: absolute;
+    padding: 10px;
 }
 

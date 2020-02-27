@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maps/libraries/google.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maps/libraries/yandex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maps/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maps/maps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyPosts/Post/Post.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyPosts/Post/Post.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogsItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/MyPosts/Post" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs/DialogItem" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -58,14 +50,17 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Max\Web Academy\samuray\src\components\MyPosts\Post" />
-      <recent name="D:\Max\Web Academy\samuray\src\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Navbar" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Max\Web Academy\samuray\src\components\Dialogs\DialogItem" />
+      <recent name="D:\Max\Web Academy\samuray\src\components\Dialogs\Message" />
+      <recent name="D:\Max\Web Academy\samuray\src\components\Profile\ProfileInfo" />
+      <recent name="D:\Max\Web Academy\samuray\src\components\MyPosts\Post" />
+      <recent name="D:\Max\Web Academy\samuray\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -110,7 +105,9 @@
       <workItem from="1582365174380" duration="1200000" />
       <workItem from="1582482347661" duration="599000" />
       <workItem from="1582537388453" duration="15060000" />
-      <workItem from="1582620939045" duration="11271000" />
+      <workItem from="1582620939045" duration="13418000" />
+      <workItem from="1582660990224" duration="823000" />
+      <workItem from="1582749853323" duration="15469000" />
     </task>
     <servers />
   </component>
