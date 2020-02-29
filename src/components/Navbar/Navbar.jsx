@@ -7,7 +7,7 @@ import {Button, ButtonGroup } from '@material-ui/core/';
 const Navbar = () => {
     return (
         <div className={s.nav}>
-        <ButtonGroup orientation="vertical" size="large" className={s.nav}>
+        <ButtonGroup orientation="vertical" size="large" aria-label="vertical contained primary button group" variant="text" className={s.nav}>
             <Button className={`${s.item} ${s.active}`}><NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink></Button>
             <Button className={s.item}><NavLink to="/dialogs" activeClassName={s.activeLink}>Messages</NavLink></Button>
             <Button className={s.item}><NavLink to="/news" activeClassName={s.activeLink}>News</NavLink></Button>
