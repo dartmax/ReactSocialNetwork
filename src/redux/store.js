@@ -1,6 +1,10 @@
+import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer";
+import sideBarReducer from "./sidebar-reducer";
+
+
 let store = {
     _state : {
-
         profilePage: {
             posts :[
                 {id: 1, message: 'Hi, how are you?', like: 20},
@@ -26,36 +30,31 @@ let store = {
                 {id: 5, name: "Sasha"},
                 {id: 6, name: "Kolya"},
 
-            ]
+            ],
+            newMessageBody: ""
         },
         sidebar: {}
     },
     _callSubscriber(){
         console.log('State changed')
     },
+
     getState(){
         return this._state;
     },
-    addPost(){
-        let newPost = {
-            id:5,
-            message: this._state.profilePage.newPostText,
-            like: 0
-        };
-        this._state.profilePage.posts.push(newPost);
-        this._state.profilePage.newPostText = '';
-        this._callSubscriber(this._state);
-    },
-    updateNewPostText(newText){
-        this._state.profilePage.newPostText = newText;
-        this._callSubscriber(this._state);
-    },
     subscribe(observer) {
-        this._callSubscriber = observer; // набоюдатель // publisher-subscriber // addeventListner// onClick // onChange
+        this._callSubscriber = observer; // наблюдатель // publisher-subscriber // addeventListner// onClick // onChange
     },
 
+    dispatch(action){
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
+        this._state.sidebar = sideBarReducer(this._state.sidebar, action);
+        this._callSubscriber(this._state);
+    },
 };
 
-export default store;
 window.state = store;
+
+export default store;
 

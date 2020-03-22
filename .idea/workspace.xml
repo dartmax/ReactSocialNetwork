@@ -2,20 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/store/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_redux_from_litera.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MyPosts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/Post/Post.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="reactSocialnetwork" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,31 +51,35 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Max\Web Academy\samuray\src" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\Dialogs\DialogItem" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\Dialogs\Message" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\Profile\ProfileInfo" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\MyPosts\Post" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Navbar" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Dialogs" />
+      <recent name="$PROJECT_DIR$/src/components/MyPosts" />
+      <recent name="$PROJECT_DIR$/src/redux" />
+      <recent name="D:\Max\Web Academy\samuray\src" />
+      <recent name="D:\Max\Web Academy\samuray\src\components\Dialogs\DialogItem" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -103,7 +119,17 @@
       <workItem from="1582979814847" duration="6554000" />
       <workItem from="1583003209918" duration="4472000" />
       <workItem from="1584201228979" duration="1853000" />
-      <workItem from="1584282272071" duration="17322000" />
+      <workItem from="1584282272071" duration="18057000" />
+      <workItem from="1584344340483" duration="2173000" />
+      <workItem from="1584359262998" duration="3498000" />
+      <workItem from="1584436122727" duration="3953000" />
+      <workItem from="1584522115234" duration="15286000" />
+      <workItem from="1584608107535" duration="14525000" />
+      <workItem from="1584695021909" duration="4140000" />
+      <workItem from="1584721674995" duration="9430000" />
+      <workItem from="1584796176025" duration="483000" />
+      <workItem from="1584798490522" duration="12984000" />
+      <workItem from="1584882663994" duration="5707000" />
     </task>
     <servers />
   </component>
@@ -124,13 +150,37 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584302299710">
+    <state x="795" y="177" width="800" height="677" key="#ESLint" timestamp="1584553221397">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584302299710" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584304107575">
+    <state x="795" y="177" width="800" height="677" key="#ESLint/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584553221397" />
+    <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584826897543">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584304107575" />
+    <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584826897543" />
+    <state x="1024" y="274" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584360178405">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="1024" y="274" width="424" height="484" key="FileChooserDialogImpl/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584360178405" />
+    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1584627151646">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584627151646" />
+    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584805263607">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584805263607" />
+    <state x="838" y="239" width="803" height="664" key="find.popup" timestamp="1584885367666">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="838" y="239" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584885367666" />
+    <state x="864" y="235" key="run.anything.popup" timestamp="1584724274810">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="864" y="235" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584724274810" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584833778391">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584833778391" />
   </component>
 </project>
