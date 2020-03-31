@@ -1,6 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
-import {sendMessageCretor, updateNewMessageBodyCreator} from "../../redux/dialogs-reducer";
+import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogs-reducer";
 import Dialogs from "./Dialogs";
 import {connect} from "react-redux";
 
@@ -15,7 +13,7 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(updateNewMessageBodyCreator(body))
         },
         sendMessage: () => {
-            dispatch(sendMessageCretor())
+            dispatch(sendMessageCreator())
         }
     }
 };

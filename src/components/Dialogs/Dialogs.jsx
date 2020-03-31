@@ -8,9 +8,9 @@ import {Button, TextareaAutosize} from '@material-ui/core';
 const Dialogs = (props) => {
     let state = props.dialogsPage;
 
-    let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} id={d.id} />);
-    let messagesElements = state.messeges.map(m => <Message message={m.message}/>);
-    let newMessagesBody = state.newMessagesBody;
+    let dialogsElements = state.dialogs.map(d => <DialogItem name={d.name} key={d.id} id={d.id} />);
+    let messagesElements = state.messages.map(m => <Message message={m.message} key={m.id}/>);
+    let newMessageBody = state.newMessageBody;
 
     let onSendMessageClick = () => {
         props.sendMessage();
@@ -28,7 +28,7 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 <div>{ messagesElements }</div>
                 <div>
-                    <div><TextareaAutosize aria-label="minimum height" rowsMin={3} cols={100} value={ newMessagesBody }
+                    <div><TextareaAutosize aria-label="minimum height" rowsMin={3} cols={100} value={ newMessageBody }
                             onChange={ onNewMessageChange }
                             placeholder='Enter your messages'/></div>
                     <div><Button variant="outlined" onClick={ onSendMessageClick }>Send</Button></div>

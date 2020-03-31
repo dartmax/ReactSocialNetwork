@@ -16,7 +16,7 @@ let store = {
 
         },
         dialogsPage: {
-            messeges: [{id: 1, message: "Hi, guys. What happen with coronavirus"},
+            messages: [{id: 1, message: "Hi, guys. What happen with coronavirus"},
                 {id: 2, message: "How are your job, after coronavirus. You are alive?"},
                 {id: 3, message: "bye! bye! see you later! Olya"},
                 {id: 4, message: "bye! bye! see you later! Angrew"},

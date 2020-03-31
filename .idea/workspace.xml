@@ -2,24 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPostsContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Common/Preloader/Preloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/puff.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/user_male2-128.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/users.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/test_redux_from_litera.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -65,21 +78,23 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Common/Preloader" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Navbar" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Header" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Header" />
+      <recent name="$PROJECT_DIR$/src/redux" />
+      <recent name="$PROJECT_DIR$/src/components/Users" />
       <recent name="$PROJECT_DIR$/src/components/Dialogs" />
       <recent name="$PROJECT_DIR$/src/components/MyPosts" />
-      <recent name="$PROJECT_DIR$/src/redux" />
-      <recent name="D:\Max\Web Academy\samuray\src" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\Dialogs\DialogItem" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -129,7 +144,20 @@
       <workItem from="1584721674995" duration="9430000" />
       <workItem from="1584796176025" duration="483000" />
       <workItem from="1584798490522" duration="12984000" />
-      <workItem from="1584882663994" duration="5707000" />
+      <workItem from="1584882663994" duration="15673000" />
+      <workItem from="1584954123651" duration="13822000" />
+      <workItem from="1585040958404" duration="2515000" />
+      <workItem from="1585057210542" duration="13367000" />
+      <workItem from="1585126905621" duration="2998000" />
+      <workItem from="1585213469833" duration="21457000" />
+      <workItem from="1585299845768" duration="5302000" />
+      <workItem from="1585325195292" duration="10709000" />
+      <workItem from="1585419939701" duration="1319000" />
+      <workItem from="1585477574816" duration="3158000" />
+      <workItem from="1585508038124" duration="4642000" />
+      <workItem from="1585555476529" duration="14573000" />
+      <workItem from="1585639056905" duration="2112000" />
+      <workItem from="1585645235532" duration="9625000" />
     </task>
     <servers />
   </component>
@@ -154,10 +182,18 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="795" y="177" width="800" height="677" key="#ESLint/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584553221397" />
+    <state x="895" y="308" width="600" height="416" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585080600876">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="895" y="308" width="600" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585080600876" />
     <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584826897543">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584826897543" />
+    <state x="713" y="27" width="965" height="978" key="CommitChangelistDialog2" timestamp="1585339065274">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="713" y="27" width="965" height="978" key="CommitChangelistDialog2/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585339065274" />
     <state x="1024" y="274" width="424" height="484" key="FileChooserDialogImpl" timestamp="1584360178405">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -166,21 +202,25 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584627151646" />
-    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584805263607">
+    <state x="689" y="151" key="SettingsEditor" timestamp="1585067506920">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584805263607" />
-    <state x="838" y="239" width="803" height="664" key="find.popup" timestamp="1584885367666">
+    <state x="689" y="151" key="SettingsEditor/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585067506920" />
+    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585672824653">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="838" y="239" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584885367666" />
-    <state x="864" y="235" key="run.anything.popup" timestamp="1584724274810">
+    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585672824653" />
+    <state x="838" y="239" width="803" height="664" key="find.popup" timestamp="1585672702969">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="864" y="235" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584724274810" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584833778391">
+    <state x="838" y="239" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585672702969" />
+    <state x="864" y="235" key="run.anything.popup" timestamp="1585331357965">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584833778391" />
+    <state x="864" y="235" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585331357965" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585595531343">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585595531343" />
   </component>
 </project>
