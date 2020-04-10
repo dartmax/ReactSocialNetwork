@@ -64,7 +64,6 @@ BookDetailsContainer.propTypes = {
 
 
 
-
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import {
@@ -74,15 +73,17 @@ import PropTypes from 'prop-types';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { getAllGenre } from 'redux/actions';
-import Multiselect from 'react-widgets/lib/Multiselect';
-import 'react-widgets/dist/css/react-widgets.css';
+import {
+    FILTER_AGE_LIST, FILTER_LANG_LIST, LANG_BACKEND, AGE_BACKEND,
+} from 'redux/constants';
+import { Multiselect } from 'react-widgets';
 
 class CatalogueFilterContainer extends Component {
     state = {
-        genre: [],
-        age_rating: [],
+        activeGenre: [],
+        ageRating: [],
         language: [],
-        checkbox: true,
+        checkbox: false,
     };
 
     componentDidMount(): void {
@@ -91,19 +92,34 @@ class CatalogueFilterContainer extends Component {
     }
 
     isFormEmpty = ({
-                       genre, age_rating: ageRating, language, checkbox,
+                       activeGenre, ageRating, language,
                    }) => (
-        !genre.length
+        !activeGenre
         || !ageRating.length
         || !language.length
-        || !checkbox
     );
 
+    onGenreChange = (e) => {
+        this.setState({
+            activeGenre: Array.isArray(e) ? [...e] : [],
+        });
+    };
+
+    onAgeRatingChange = (e) => {
+        this.setState({
+            ageRating: e.target.value,
+        });
+    };
+
+    onLanguageChange = (e) => {
+        this.setState({
+            language: e.target.value,
+        });
+    };
 
     onChange = (e) => {
         this.setState({
             [e.target.type]: e.target.checked,
-            [e.target.name]: e.target.value.trim(),
         });
     };
 
@@ -115,25 +131,44 @@ class CatalogueFilterContainer extends Component {
         return [];
     };
 
+
+    handleSubmitClick = () => {
+        const {
+            activeGenre, ageRating, language, checkbox,
+        } = this.state;
+        const {
+            allGenresList,
+        } = this.props;
+        let activeGenreId = '';
+        if (allGenresList.length) {
+            activeGenreId = allGenresList.find(genre => genre.name_en === activeGenre[0]).id;
+        }
+        window.location.href = `${window.location.origin}/books/?language=${LANG_BACKEND[language]}&age_rating=${AGE_BACKEND[ageRating]}&finished=${checkbox
+            ? 'true'
+            : 'false'}&genres=${activeGenre.length
+            ? activeGenreId
+            : ''}`;
+    };
+
+
     render() {
         const {
             handleSubmit, allGenresList,
         } = this.props;
-
+        const activeFilterAge = FILTER_AGE_LIST;
+        const activeFilterLang = FILTER_LANG_LIST;
         return (
             <Col className="search-container searchForm m-auto p-4" sm="12" xs="12">
-                <Form onSubmit={handleSubmit(allGenresList)}>
+                <Form onSubmit={handleSubmit(allGenresList, activeFilterAge, activeFilterLang)}>
                     <FormGroup>
                         <Label for="genre">Genre</Label>
                         <InputGroup>
-                            <Field
-                                className="genreMultiselect"
-                                component={Multiselect}
-                                multiple
-                                defaultValue={[]}
+                            <Multiselect
+                                className="w-100"
                                 data={this.getGenreList()}
-                                name="Genre"
-                                id="genre"
+                                name="genre"
+                                id="activeGenre"
+                                onChange={this.onGenreChange}
                             />
                         </InputGroup>
                     </FormGroup>
@@ -143,11 +178,18 @@ class CatalogueFilterContainer extends Component {
                             <Field
                                 className="form-control"
                                 component="select"
-                                name="Age rating"
+                                name="age_rating"
                                 id="ageRating"
                                 ageRating="ageRating"
-                                onChange={this.onChange}
-                            />
+                                onChange={this.onAgeRatingChange}
+                            >
+                                <option value="">Select a age rating...</option>
+                                {activeFilterAge.map(valueAge => (
+                                    <option value={valueAge} key={valueAge}>
+                                        {valueAge}
+                                    </option>
+                                ))}
+                            </Field>
                         </InputGroup>
                     </FormGroup>
                     <FormGroup>
@@ -156,11 +198,18 @@ class CatalogueFilterContainer extends Component {
                             <Field
                                 className="form-control"
                                 component="select"
-                                name="Language"
+                                name="language"
                                 id="language"
                                 language="language"
-                                onChange={this.onChange}
-                            />
+                                onChange={this.onLanguageChange}
+                            >
+                                <option value="">Select a language...</option>
+                                {activeFilterLang.map(valueLang => (
+                                    <option value={valueLang} key={valueLang}>
+                                        {valueLang}
+                                    </option>
+                                ))}
+                            </Field>
                         </InputGroup>
                     </FormGroup>
                     <FormGroup tag="fieldset">
@@ -182,6 +231,7 @@ class CatalogueFilterContainer extends Component {
                         style={{ borderRadius: '2em' }}
                         color="primary"
                         disabled={this.isFormEmpty(this.state)}
+                        onClick={this.handleSubmitClick}
                     >
                         Filter
                     </Button>
@@ -197,7 +247,8 @@ CatalogueFilterContainer.propTypes = {
     allGenresList: PropTypes.array.isRequired,
 };
 const mapStateToProps = state => ({
-    allGenresList: state.genresReducer.allGenresList,
+    allGenresList: state.selectedFilter.allGenresList,
+    genresFilter: state.selectedFilter.genresFilter,
 });
 
 export default compose(
@@ -206,4 +257,3 @@ export default compose(
         form: 'filter',
     }),
 )(CatalogueFilterContainer);
-

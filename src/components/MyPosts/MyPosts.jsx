@@ -1,37 +1,43 @@
 import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import {Button, TextareaAutosize} from '@material-ui/core';
+import {Button} from '@material-ui/core';
+import {Field, reduxForm} from "redux-form";
+import {maxLengthCreator, required} from "../../utils/validators/validators";
+import {Textarea} from "../../Common/FormsControls/FormsControls";
+
+const maxLength10 = maxLengthCreator(10)
+
+let AddNewPostForm = (props) => {
+    return <form onSubmit={props.handleSubmit}>
+        <div>
+            <Field name="newPostText" component={Textarea} placeholder={"Post message"} validate={[required, maxLength10]}/>
+        </div>
+        <div>
+            <Button variant="outlined">Add Post</Button>
+        </div>
+    </form>
+}
+
+let AddNewPostFormRedux = reduxForm({form: "ProfileAddNewPostForm"})(AddNewPostForm);
 
 const MyPosts = (props) => {
     let postElements = props.posts.map(p => <Post message={p.message} like={p.like}/>);
 
-    let newPostElement = React.createRef();
-
-    let addPost = () => {
-        props.addPost();
-    };
-
-    let onPostChange = () => {
-        let text = newPostElement.current.value;
-        props.updateNewPostText(text);
+    let onAddPost = (values) => {
+        props.addPost(values.newPostText);
     };
 
     return (
         <div className={s.postsBlock}>
             <h3>My Posts</h3>
-            <div>
-                <TextareaAutosize onChange={ onPostChange } ref={ newPostElement } aria-label="minimum height" rowsMin={3} cols={100}
-                                  value = {props.newPostText}/>
-            </div>
-            <div>
-                <Button variant="outlined" onClick={ addPost }>Add Post</Button>
-            </div>
+            <AddNewPostFormRedux onSubmit={onAddPost}/>
             <div className={s.posts}>
                 {postElements}
             </div>
         </div>
     )
 };
+
 
 export default MyPosts;

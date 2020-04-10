@@ -1,11 +1,11 @@
 import React from "react";
-import preloader from "../../assets/puff.svg";
+import preloader from "../../assets/popup-loader.gif";
 
-let Preloader = (props) => {
+let Preloader = () => {
     return <div>
-        <div style={{backgroundColor: 'white'}}>
-            <omg src={preloader}/>
+        <div>
+            <img src={preloader} alt=''/>
         </div>
     </div>
-}
+};
 export default Preloader;

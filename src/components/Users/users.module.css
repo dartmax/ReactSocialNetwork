@@ -8,3 +8,7 @@
     font-weight: bold;
     cursor: pointer;
 }
+.noSelectedPage {
+    font-weight: normal;
+    cursor: pointer;
+}
