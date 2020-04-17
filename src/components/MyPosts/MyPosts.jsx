@@ -21,8 +21,11 @@ let AddNewPostForm = (props) => {
 
 let AddNewPostFormRedux = reduxForm({form: "ProfileAddNewPostForm"})(AddNewPostForm);
 
-const MyPosts = (props) => {
-    let postElements = props.posts.map(p => <Post message={p.message} like={p.like}/>);
+const MyPosts = React.memo((props) => {
+    let postElements = [...props.posts].reverse().map(p => <Post message={p.message} like={p.like}/>);
+
+    // eslint-disable-next-line no-unused-vars
+    let newPostElement = React.createRef();
 
     let onAddPost = (values) => {
         props.addPost(values.newPostText);
@@ -37,7 +40,7 @@ const MyPosts = (props) => {
             </div>
         </div>
     )
-};
+});
 
 
 export default MyPosts;

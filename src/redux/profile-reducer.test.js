@@ -1,0 +1,43 @@
+import React from "react";
+import {addPostActionCreator, profileReducer, deletePost} from "./profile-reducer";
+
+
+let state = {
+    posts :[
+        {id: 1, message: "Hi, how are you?", like: 20},
+        {id: 2, message: "It's my first post", like: 30},
+        {id: 3, message: "It's post", like: 0},
+        {id: 4, message: "It's my 4th post!!!", like: 5}
+    ]
+};
+
+it('length of post should be increment', () => {
+    let action = addPostActionCreator("Hi from Kiev capital");
+
+    let newState = profileReducer(state, action);
+    expect(newState.posts.length).toBe(5);
+});
+
+it('message of new post should be correct', () => {
+    let action = addPostActionCreator("Hi from Kiev capital");
+
+    let newState = profileReducer(state, action);
+    expect(newState.posts[4].message).toBe("Hi from Kiev capital");
+});
+
+
+it('Length after deleting length should be increment', () => {
+    let action = deletePost(1);
+
+    let newState = profileReducer(state, action);
+
+    expect(newState.posts.length).toBe(3);
+});
+
+it('Length after deleting length should be decrement if if is incorrect', () => {
+    let action = deletePost(1000);
+
+    let newState = profileReducer(state, action);
+
+    expect(newState.posts.length).toBe(4);
+});

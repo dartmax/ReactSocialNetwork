@@ -12,3 +12,12 @@ border: 1px solid red;
     font-size: 8pt;
     color: red;
 }
+
+.formSummaryError
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 8pt;
+    border: 1px solid red;
+    padding: 5px;
+    color: red;
+}
