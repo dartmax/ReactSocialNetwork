@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Fragment} from "react";
 import {connect} from "react-redux";
 import {follow, unFollow, setCurrentPage, toggleIsFollowingProgress, requestUsers} from '../../redux/users-reducer';
 import Users from './Users';
@@ -26,10 +26,9 @@ class UsersContainer extends React.Component {
     };
 
     render() {
-        return <>
+        return <Fragment>
         {this.props.isFetching ? <Preloader /> : null}
-        <Users
-            totalUsersCount={this.props.totalUsersCount}
+        <Users totalUsersCount={this.props.totalUsersCount}
               pageSize={this.props.pageSize}
               currentPage={this.props.currentPage}
               onPageChanged={this.onPageChanged}
@@ -38,7 +37,7 @@ class UsersContainer extends React.Component {
               unFollow={this.props.unFollow}
               followingInProgress={this.props.followingInProgress}
         />
-        </>
+        </Fragment>
     }
 }
 
@@ -56,7 +55,6 @@ class UsersContainer extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        // users: getUsers(state),
         users: getUsers(state),
         pageSize: getPageSizes(state),
         totalUsersCount: getTotalUsersCount(state),

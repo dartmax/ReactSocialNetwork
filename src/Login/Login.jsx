@@ -1,5 +1,5 @@
 import React from "react";
-import {Field, reduxForm} from "redux-form";
+import {reduxForm} from "redux-form";
 import {Button} from '@material-ui/core';
 import {Input} from "../Common/FormsControls/FormsControls"
 import {required} from "../utils/validators/validators";
