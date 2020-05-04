@@ -1,60 +1,59 @@
 import profileReducer from "./profile-reducer";
 import dialogsReducer from "./dialogs-reducer";
-import sideBarReducer from "./sidebar-reducer";
-
+import sidebarReducer from "./sidebar-reducer";
 
 let store = {
-    _state : {
+    _state: {
         profilePage: {
-            posts :[
-                {id: 1, message: 'Hi, how are you?', like: 20},
-                {id: 2, message: "It's my first post", like: 30},
-                {id: 3, message: "It's post", like: 0},
-                {id: 4, message: "It's my 4th post!!!", like: 5}
+            posts: [
+                {id: 1, message: 'Hi, how are you?', likesCount: 12},
+                {id: 2, message: 'It\'s my first post', likesCount: 11},
+                {id: 3, message: 'Blabla', likesCount: 11},
+                {id: 4, message: 'Dada', likesCount: 11}
             ],
-            newPostText: 'Hi from React!'
-
+            newPostText: 'it-kamasutra.com'
         },
         dialogsPage: {
-            messages: [{id: 1, message: "Hi, guys. What happen with coronavirus"},
-                {id: 2, message: "How are your job, after coronavirus. You are alive?"},
-                {id: 3, message: "bye! bye! see you later! Olya"},
-                {id: 4, message: "bye! bye! see you later! Angrew"},
-                {id: 5, message: "bye! bye! see you later! Sasha"},
-                {id: 6, message: "bye! bye! see you later! Kolya"},
+            dialogs: [
+                {id: 1, name: 'Dimych'},
+                {id: 2, name: 'Andrew'},
+                {id: 3, name: 'Sveta'},
+                {id: 4, name: 'Sasha'},
+                {id: 5, name: 'Viktor'},
+                {id: 6, name: 'Valera'}
             ],
-            dialogs: [{id: 1, name: "Max"},
-                {id: 2, name: "Jack"},
-                {id: 3, name: "Olya"},
-                {id: 4, name: "Angrew"},
-                {id: 5, name: "Sasha"},
-                {id: 6, name: "Kolya"},
-
+            messages: [
+                {id: 1, message: 'Hi'},
+                {id: 2, message: 'How is your it-kamasutra?'},
+                {id: 3, message: 'Yo'},
+                {id: 4, message: 'Yo'},
+                {id: 5, message: 'Yo'}
             ],
             newMessageBody: ""
         },
         sidebar: {}
     },
-    _callSubscriber(){
-        console.log('State changed')
+    _callSubscriber() {
+        console.log('State changed');
     },
 
-    getState(){
+    getState() {
+        debugger;
         return this._state;
     },
     subscribe(observer) {
-        this._callSubscriber = observer; // наблюдатель // publisher-subscriber // addeventListner// onClick // onChange
+        this._callSubscriber = observer;  // observer
     },
 
-    dispatch(action){
+    dispatch(action) {
         this._state.profilePage = profileReducer(this._state.profilePage, action);
         this._state.dialogsPage = dialogsReducer(this._state.dialogsPage, action);
-        this._state.sidebar = sideBarReducer(this._state.sidebar, action);
-        this._callSubscriber(this._state);
-    },
-};
+        this._state.sidebar = sidebarReducer(this._state.sidebar, action);
 
-window.state = store;
+        this._callSubscriber(this._state);
+    }
+}
+
 
 export default store;
-
+window.store = store;

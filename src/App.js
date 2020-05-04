@@ -1,11 +1,10 @@
 import React, {Fragment} from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Redirect, Route, Switch, withRouter} from "react-router-dom";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import TestList from "./components/Test/TestList";
-import {withRouter} from "react-router";
 import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import LoginPage from "./Login/Login";
@@ -19,9 +18,20 @@ const DialogsContainer = React.lazy(() => import ("./components/Dialogs/DialogsC
 const ProfileContainer = React.lazy(() => import ("./components/Profile/ProfileContainer"));
 
 class App extends React.Component {
+
+    catchAllUnhandledErrors = (reason, promise) => {
+    alert("promiseRejectionEvent")
+    }
+
     componentDidMount() {
         this.props.initializeApp();
+        window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
     }
+
+    componentWillUnmount() {
+        window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
+    }
+
 
     render() {
         if (!this.props.initialized) {
@@ -33,14 +43,19 @@ class App extends React.Component {
                     <HeaderContainer/>
                     <Navbar/>
                     <div className='app-wrapper-content'>
+                        <Switch>
+                        <Route exact path='/' render={() => <Redirect to={"/profile"} />}/>
                         <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
                         <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
                         <Route path='/users' render={() => <UsersContainer/>}/>
                         <Route path='/login' render={() => <LoginPage/>}/>
                         <Route path='/test' render={() => <TestList/>}/>
+                        <Route path='*' render={() => <div>404 NOT FOUND</div>}/>
 
-                        {/*<Route path='/music' component={Music}/>*/}
+
+                            {/*<Route path='/music' component={Music}/>*/}
                         {/*<Route path='/settings' component={Settings}/>*/}
+                        </Switch>
                     </div>
                 </div>
             </Fragment>
@@ -56,7 +71,7 @@ let AppContainer = compose(
     withRouter,
     connect(mapStateToProps, {initializeApp}))(App);
 
-const SocialJSApp = () => {
+const SocialJSApp = (props) => {
     return <BrowserRouter>
         <Provider store={store}>
             <AppContainer/>

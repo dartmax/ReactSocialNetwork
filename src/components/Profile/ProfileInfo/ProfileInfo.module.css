@@ -1,3 +1,10 @@
 .descriptionBlock{
     padding: 10px;
 }
+.contact {
+    padding-left: 10px;
+}
+
+.mainPhoto {
+    max-width: 200px;
+}

@@ -9,7 +9,7 @@ let User = ({user, followingInProgress, unFollow, follow}) => {
             <span>
                 <div>
                     <NavLink to={'/profile/' + user.id}>
-                    <img src={user.photos.small !== null ? user.photos.small : userPhoto} alt=""
+                    <img src={user.photos.small != null ? user.photos.small : userPhoto} alt=""
                          className={styles.usersPhoto}/>
                 </NavLink></div>
                 <div>
@@ -20,9 +20,7 @@ let User = ({user, followingInProgress, unFollow, follow}) => {
                                   }}>
                             unFollow</button>
                         : <button disabled={followingInProgress.some(id => id === user.id)}
-                                  onClick={() => {
-                                      follow(user.id)
-                                  }}>
+                                  onClick={() => {follow(user.id)}}>
                             Follow</button>}
                 </div>
             </span>
