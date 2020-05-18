@@ -26,24 +26,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Test/test_js/xhr_fetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test/test_js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/test_js/actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Test/test_js/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/test_js/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/app-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +55,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Y5T5tuXyA23bIoydAFUsXCOB66" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -87,7 +88,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
   </component>
   <component name="RecentsManager">
@@ -283,7 +284,18 @@
       <workItem from="1588148058694" duration="1211000" />
       <workItem from="1588233930205" duration="1109000" />
       <workItem from="1588247620022" duration="2601000" />
-      <workItem from="1588579669766" duration="594000" />
+      <workItem from="1588579669766" duration="1270000" />
+      <workItem from="1588666055809" duration="5293000" />
+      <workItem from="1588752984883" duration="1951000" />
+      <workItem from="1588765267975" duration="2947000" />
+      <workItem from="1588921333366" duration="1292000" />
+      <workItem from="1589026794877" duration="1215000" />
+      <workItem from="1589146001165" duration="770000" />
+      <workItem from="1589190906039" duration="5896000" />
+      <workItem from="1589271194072" duration="9423000" />
+      <workItem from="1589358023274" duration="1944000" />
+      <workItem from="1589443924903" duration="553000" />
+      <workItem from="1589533979986" duration="1418000" />
     </task>
     <servers />
   </component>
@@ -423,13 +435,17 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="897" y="337" width="485" height="309" key="git4idea.rebase.GitRebaseDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587482455353" />
+    <state x="872" y="388" width="534" height="207" key="git4idea.ui.GitStashDialog" timestamp="1589229515787">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="872" y="388" width="534" height="207" key="git4idea.ui.GitStashDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589229515787" />
     <state x="864" y="235" key="run.anything.popup" timestamp="1586714761008">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="864" y="235" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586714761008" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588021557628">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589537596634">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1588021557628" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589537596634" />
   </component>
 </project>
