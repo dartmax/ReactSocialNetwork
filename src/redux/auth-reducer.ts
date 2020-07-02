@@ -2,15 +2,16 @@ import {authAPI, securityAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
 
 const SET_USER_DATA = 'samurai-network/auth/SET_USER_DATA';
-const GEY_CAPTCHA_URL_SUCCESS = 'samurai-network/auth/GEY_CAPTCHA_URL_SUCCESS';
+const GET_CAPTCHA_URL_SUCCESS = 'samurai-network/auth/GET_CAPTCHA_URL_SUCCESS';
+
 
 
 let initialState = {
-    usersId: null,
-    email: null,
-    login: null,
+    usersId: null as (number | null),
+    email: null as string | null,
+    login: null as string | null,
     isAuth: false,
-    captchaUrl: null, // if null. then captcha is not required
+    captchaUrl: null as string | null, // if null. then captcha is not required
 };
 
 export type initialStateType = typeof initialState;
@@ -19,10 +20,11 @@ export type initialStateType = typeof initialState;
 const authReducer = (state = initialState, action: any): initialStateType => {
     switch (action.type){
         case SET_USER_DATA:
-        case GEY_CAPTCHA_URL_SUCCESS:
+        case GET_CAPTCHA_URL_SUCCESS:
             return {
                 ...state,
-                ...action.payload
+                ...action.payload,
+                userId: 'Max',
             }
             default:
             return state;
@@ -45,12 +47,12 @@ export const setAuthUserData = (userId: number | null, email: string | null, log
     type: SET_USER_DATA, payload: {userId, email, login, isAuth} });
 
 type getCaptchaUrlSuccessActionType = {
-    type: typeof GEY_CAPTCHA_URL_SUCCESS,
+    type: typeof GET_CAPTCHA_URL_SUCCESS,
     payload: { captchaUrl: string }
 }
 
 export const getCaptchaUrlSuccess = (captchaUrl: string): getCaptchaUrlSuccessActionType => ({
-    type: GEY_CAPTCHA_URL_SUCCESS, payload: {captchaUrl} });
+    type: GET_CAPTCHA_URL_SUCCESS, payload: {captchaUrl} });
 
 export const getAuthUserData = () => async (dispatch: any) => {
     let response = await authAPI.me();

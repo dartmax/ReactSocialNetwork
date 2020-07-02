@@ -26,19 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Test/test_js/xhr_fetch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Test/Hooks_Artyom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test/test_js/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/test_js/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Test/test_js/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Test/test_js/reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/app-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/app-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,19 +87,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Common/Pagination" />
-      <recent name="$PROJECT_DIR$/src/Common" />
-      <recent name="$PROJECT_DIR$/src/Common/Preloader" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
-      <recent name="D:\Max\Web Academy\samuray\src\components\Navbar" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Users" />
       <recent name="$PROJECT_DIR$/src/redux" />
       <recent name="$PROJECT_DIR$/src/components/Test/Func" />
       <recent name="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
       <recent name="$PROJECT_DIR$/src/Common/FormsControls" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/Common/Pagination" />
+      <recent name="$PROJECT_DIR$/src/Common" />
+      <recent name="$PROJECT_DIR$/src/Common/Preloader" />
+      <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.news reducer.NEWS_GET_FAILURE">
@@ -296,6 +291,36 @@
       <workItem from="1589358023274" duration="1944000" />
       <workItem from="1589443924903" duration="553000" />
       <workItem from="1589533979986" duration="1418000" />
+      <workItem from="1589875755117" duration="1832000" />
+      <workItem from="1589962099657" duration="2094000" />
+      <workItem from="1590048399002" duration="1827000" />
+      <workItem from="1590139212375" duration="2008000" />
+      <workItem from="1590394388384" duration="1485000" />
+      <workItem from="1590481405073" duration="10193000" />
+      <workItem from="1590568187949" duration="909000" />
+      <workItem from="1590653329046" duration="1376000" />
+      <workItem from="1590747295919" duration="942000" />
+      <workItem from="1590999612107" duration="1471000" />
+      <workItem from="1591258111257" duration="1217000" />
+      <workItem from="1591278782294" duration="1333000" />
+      <workItem from="1591690036586" duration="1884000" />
+      <workItem from="1591776693066" duration="744000" />
+      <workItem from="1591879190778" duration="1618000" />
+      <workItem from="1592208307705" duration="3361000" />
+      <workItem from="1592295203898" duration="1187000" />
+      <workItem from="1592381838437" duration="1172000" />
+      <workItem from="1592468683199" duration="1183000" />
+      <workItem from="1592814313661" duration="1965000" />
+      <workItem from="1592899744885" duration="1205000" />
+      <workItem from="1592929227688" duration="1204000" />
+      <workItem from="1592986795786" duration="717000" />
+      <workItem from="1593028795004" duration="555000" />
+      <workItem from="1593073078123" duration="3226000" />
+      <workItem from="1593156953103" duration="527000" />
+      <workItem from="1593170199650" duration="2183000" />
+      <workItem from="1593504419903" duration="1169000" />
+      <workItem from="1593534740300" duration="2515000" />
+      <workItem from="1593680853127" duration="1710000" />
     </task>
     <servers />
   </component>
@@ -411,10 +436,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state width="2266" height="374" key="GridCell.Tab.3.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1587479350550">
+    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1591883213724">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587479350550" />
+    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1591883213724" />
     <state x="1109" y="144" key="SettingsEditor" timestamp="1587398250560">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -427,10 +452,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="915" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586420363541" />
-    <state x="983" y="215" width="803" height="664" key="find.popup" timestamp="1588062049653">
+    <state x="983" y="215" width="803" height="664" key="find.popup" timestamp="1590496376579">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="983" y="215" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1588062049653" />
+    <state x="983" y="215" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1590496376579" />
     <state x="897" y="337" width="485" height="309" key="git4idea.rebase.GitRebaseDialog" timestamp="1587482455354">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -443,9 +468,9 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="864" y="235" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586714761008" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589537596634">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589997081003">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589537596634" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589997081003" />
   </component>
 </project>
