@@ -21,7 +21,7 @@ let initialState = {
         newPostText: "",
 };
 
-export type InitialState = typeof initialState;
+export type InitialStateType = typeof initialState;
 
 export const profileReducer = (state = initialState, action: any): InitialStateType => {
     switch (action.type) {

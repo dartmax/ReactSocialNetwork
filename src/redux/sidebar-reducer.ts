@@ -3,7 +3,7 @@ let initialState = {};
 type initialStateType = typeof initialState;
 
 type sideBarReducerActipnType = {
-    state: any
+    state: any,
     action: any
 }
 
