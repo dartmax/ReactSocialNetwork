@@ -1,10 +1,24 @@
-import React, {useState} from "react";
-import styles from "./Pagination.module.css";
-import cn from "classnames";
+import React, {FC, useState} from 'react';
+import styles from './Pagination.module.css';
+import cn from 'classnames';
 
-let PaginationComponent = ({totalUsersCount, pageSize, currentPage, onPageChanged, portionSize = 10}) => {
+type PropsType = {
+    totalUsersCount: number
+    pageSize: number
+    currentPage: number
+    onPageChanged: (pageNumber: number) => void
+    portionSize?: number
+}
+
+let PaginationComponent: FC<PropsType> = ({
+    totalUsersCount,
+    pageSize,
+    currentPage,
+    onPageChanged,
+    portionSize = 10
+}) => {
     let pagesCount = Math.ceil(totalUsersCount / pageSize);
-    let pages = [];
+    let pages: Array<number> = [];
     for (let i = 0; i <= pagesCount; i++) {
         pages.push(i);
     }

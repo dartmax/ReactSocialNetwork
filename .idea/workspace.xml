@@ -27,6 +27,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-selectors.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +70,7 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -81,19 +89,19 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Users" />
-      <recent name="$PROJECT_DIR$/src/redux" />
-      <recent name="$PROJECT_DIR$/src/components/Test/Func" />
-      <recent name="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
-      <recent name="$PROJECT_DIR$/src/Common/FormsControls" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Common/Pagination" />
       <recent name="$PROJECT_DIR$/src/Common" />
       <recent name="$PROJECT_DIR$/src/Common/Preloader" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/Users" />
+      <recent name="$PROJECT_DIR$/src/redux" />
+      <recent name="$PROJECT_DIR$/src/components/Test/Func" />
+      <recent name="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.news reducer.NEWS_GET_FAILURE">
@@ -316,7 +324,16 @@
       <workItem from="1593534740300" duration="2515000" />
       <workItem from="1593680853127" duration="1710000" />
       <workItem from="1593763714784" duration="1482000" />
-      <workItem from="1593773696819" duration="715000" />
+      <workItem from="1593773696819" duration="1599000" />
+      <workItem from="1594109655652" duration="2359000" />
+      <workItem from="1594195465259" duration="553000" />
+      <workItem from="1594368572456" duration="1085000" />
+      <workItem from="1594552468838" duration="1310000" />
+      <workItem from="1594801203345" duration="1349000" />
+      <workItem from="1594890554851" duration="1750000" />
+      <workItem from="1594982393776" duration="692000" />
+      <workItem from="1595232611303" duration="1085000" />
+      <workItem from="1595405014685" duration="5476000" />
     </task>
     <servers />
   </component>
@@ -336,10 +353,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="795" y="177" width="800" height="677" key="#ESLint" timestamp="1586281380227">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="795" y="177" width="800" height="677" key="#ESLint/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586281380227" />
     <state x="773" y="173" width="732" height="637" key="#Inspections" timestamp="1587394574433">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -348,42 +361,22 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="100" y="100" width="2089" height="783" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587396478061" />
-    <state x="895" y="308" width="600" height="416" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585080600876">
+    <state width="2243" height="242" key="GridCell.Tab.0.bottom" timestamp="1595445969421">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="895" y="308" width="600" height="416" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585080600876" />
-    <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584826897543">
+    <state width="2243" height="242" key="GridCell.Tab.0.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595445969421" />
+    <state width="2243" height="242" key="GridCell.Tab.0.center" timestamp="1595445969421">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="1013" y="264" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1584826897543" />
-    <state x="713" y="27" width="965" height="978" key="CommitChangelistDialog2" timestamp="1585339065274">
+    <state width="2243" height="242" key="GridCell.Tab.0.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595445969421" />
+    <state width="2243" height="242" key="GridCell.Tab.0.left" timestamp="1595445969421">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="713" y="27" width="965" height="978" key="CommitChangelistDialog2/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585339065274" />
-    <state x="100" y="100" width="2089" height="783" key="DiffContextDialog" timestamp="1586027013503">
+    <state width="2243" height="242" key="GridCell.Tab.0.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595445969421" />
+    <state width="2243" height="242" key="GridCell.Tab.0.right" timestamp="1595445969421">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="100" y="100" width="2089" height="783" key="DiffContextDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586027013503" />
-    <state x="1024" y="274" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585818134117">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="1024" y="274" width="424" height="484" key="FileChooserDialogImpl/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1585818134117" />
-    <state width="2266" height="374" key="GridCell.Tab.0.bottom" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.0.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.0.center" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.0.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.0.left" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.0.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.0.right" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.0.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
+    <state width="2243" height="242" key="GridCell.Tab.0.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595445969421" />
     <state width="2266" height="374" key="GridCell.Tab.1.bottom" timestamp="1587411723881">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -440,18 +433,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="1109" y="144" key="SettingsEditor/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587398250560" />
-    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586629289470">
+    <state x="983" y="215" width="803" height="664" key="find.popup" timestamp="1595446516601">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="986" y="208" width="419" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586629289470" />
-    <state x="915" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586420363541">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="915" y="406" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586420363541" />
-    <state x="983" y="215" width="803" height="664" key="find.popup" timestamp="1590496376579">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="983" y="215" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1590496376579" />
+    <state x="983" y="215" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595446516601" />
     <state x="897" y="337" width="485" height="309" key="git4idea.rebase.GitRebaseDialog" timestamp="1587482455354">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -460,13 +445,9 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="872" y="388" width="534" height="207" key="git4idea.ui.GitStashDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589229515787" />
-    <state x="864" y="235" key="run.anything.popup" timestamp="1586714761008">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595446690552">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="864" y="235" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1586714761008" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589997081003">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589997081003" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595446690552" />
   </component>
 </project>
