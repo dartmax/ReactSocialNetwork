@@ -26,15 +26,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/auth-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/profile-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/security-api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-selectors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/FormsControls/FormsControls.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validators/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/validators.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,13 +200,14 @@
     <recent_temporary>
       <list>
         <item itemvalue="Jest.news reducer.NEWS_GET_FAILURE" />
-        <item itemvalue="Jest.ProfileStatus component.callback should be called" />
-        <item itemvalue="Jest.ProfileStatus component.after creation &lt;div&gt; should be displayed with correct status" />
         <item itemvalue="Jest.ProfileStatus component.input should be displayed in edutMode instead of span" />
+        <item itemvalue="Jest.ProfileStatus component.callback should be called" />
         <item itemvalue="Jest.ProfileStatus component.after creation &lt;input&gt; shouldn't be displayed " />
+        <item itemvalue="Jest.ProfileStatus component.after creation &lt;div&gt; should be displayed with correct status" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -334,11 +344,31 @@
       <workItem from="1594982393776" duration="692000" />
       <workItem from="1595232611303" duration="1085000" />
       <workItem from="1595405014685" duration="5476000" />
+      <workItem from="1595491471665" duration="4003000" />
+      <workItem from="1595583349169" duration="11577000" />
+      <workItem from="1595677792748" duration="11542000" />
+      <workItem from="1595836657240" duration="2426000" />
+      <workItem from="1595857360813" duration="1848000" />
+      <workItem from="1595924079320" duration="777000" />
+      <workItem from="1596008894421" duration="689000" />
+      <workItem from="1596101194361" duration="1775000" />
+      <workItem from="1596182802586" duration="2095000" />
+      <workItem from="1597048398920" duration="1728000" />
+      <workItem from="1597139220481" duration="1231000" />
+      <workItem from="1597220721385" duration="1537000" />
+      <workItem from="1597306499852" duration="1143000" />
+      <workItem from="1597393258076" duration="795000" />
+      <workItem from="1597579353353" duration="895000" />
+      <workItem from="1597652936399" duration="837000" />
+      <workItem from="1597738281682" duration="841000" />
+      <workItem from="1597825686943" duration="2497000" />
+      <workItem from="1597912120119" duration="798000" />
+      <workItem from="1597920296095" duration="1292000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -353,14 +383,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="773" y="173" width="732" height="637" key="#Inspections" timestamp="1587394574433">
+    <state x="100" y="100" width="2089" height="783" key="DiffContextDialog" timestamp="1597923021466">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="773" y="173" width="732" height="637" key="#Inspections/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587394574433" />
-    <state x="100" y="100" width="2089" height="783" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1587396478061">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="100" y="100" width="2089" height="783" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587396478061" />
+    <state x="100" y="100" width="2089" height="783" key="DiffContextDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1597923021466" />
     <state width="2243" height="242" key="GridCell.Tab.0.bottom" timestamp="1595445969421">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -377,77 +403,21 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state width="2243" height="242" key="GridCell.Tab.0.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595445969421" />
-    <state width="2266" height="374" key="GridCell.Tab.1.bottom" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.1.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.1.center" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.1.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.1.left" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.1.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.1.right" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.1.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.2.bottom" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.2.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.2.center" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.2.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.2.left" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.2.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.2.right" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.2.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.3.bottom" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.3.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.3.center" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.3.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.3.left" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.3.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
-    <state width="2266" height="374" key="GridCell.Tab.3.right" timestamp="1587411723881">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2266" height="374" key="GridCell.Tab.3.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587411723881" />
     <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1591883213724">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1591883213724" />
-    <state x="1109" y="144" key="SettingsEditor" timestamp="1587398250560">
+    <state x="873" y="225" width="654" height="540" key="StructurePopup" timestamp="1595683993483">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="1109" y="144" key="SettingsEditor/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587398250560" />
-    <state x="983" y="215" width="803" height="664" key="find.popup" timestamp="1595446516601">
+    <state x="873" y="225" width="654" height="540" key="StructurePopup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595683993483" />
+    <state x="983" y="213" width="803" height="664" key="find.popup" timestamp="1597854836231">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="983" y="215" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595446516601" />
-    <state x="897" y="337" width="485" height="309" key="git4idea.rebase.GitRebaseDialog" timestamp="1587482455354">
+    <state x="983" y="213" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1597854836231" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595840300013">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="897" y="337" width="485" height="309" key="git4idea.rebase.GitRebaseDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1587482455353" />
-    <state x="872" y="388" width="534" height="207" key="git4idea.ui.GitStashDialog" timestamp="1589229515787">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="872" y="388" width="534" height="207" key="git4idea.ui.GitStashDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1589229515787" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595446690552">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595446690552" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595840300013" />
   </component>
 </project>

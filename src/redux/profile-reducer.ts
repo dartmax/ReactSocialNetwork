@@ -1,6 +1,7 @@
-import {profileAPI, usersAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
 import {PhotosType, PostType, ProfileType} from '../types/types'
+import {usersAPI} from "../api/users-api";
+import {profileAPI} from "../api/profile-api";
 
 const ADD_POST = 'ADD-POST';
 const SET_USER_PROFILE = 'SET_USER_PROFILE';
@@ -108,7 +109,7 @@ export let savePhotoSuccess = (photos: PhotosType): savePhotoSuccessActionType =
 
 
 export let getUserProfile = (userId: number) => async (dispatch: any) => {
-    const response = await usersAPI.getProfile(userId);
+    const response = await profileAPI.getProfile(userId);
         dispatch(setUserProfile(response.data));
 };
 
