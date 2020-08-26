@@ -26,24 +26,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/auth-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/profile-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/security-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/FormsControls/FormsControls.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/auth-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/auth-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/profile-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/profile-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/security-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/security-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/users-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/app-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validators/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/validators.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +88,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/components/Header.jsx" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -363,7 +356,10 @@
       <workItem from="1597738281682" duration="841000" />
       <workItem from="1597825686943" duration="2497000" />
       <workItem from="1597912120119" duration="798000" />
-      <workItem from="1597920296095" duration="1292000" />
+      <workItem from="1597920296095" duration="6397000" />
+      <workItem from="1597999416420" duration="3796000" />
+      <workItem from="1598112372403" duration="2301000" />
+      <workItem from="1598429780864" duration="736000" />
     </task>
     <servers />
   </component>
@@ -415,9 +411,13 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="983" y="213" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1597854836231" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595840300013">
+    <state x="864" y="223" key="run.anything.popup" timestamp="1598023683640">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595840300013" />
+    <state x="864" y="223" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598023683640" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597931983293">
+      <screen x="0" y="0" width="2560" height="1032" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1597931983293" />
   </component>
 </project>

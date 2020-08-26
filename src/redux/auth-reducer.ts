@@ -71,7 +71,7 @@ export const login = (email: string, password: string, rememberMe: boolean, capt
                 dispatch(getAuthUserData())
             } else {
             if (data.resultCode === ResultCodeForCaptchaEnum.CaptchaIsRequired){
-                dispatch.getCaptchaUrl();
+                await dispatch.getCaptchaUrl();
             }
 
         let message = data.messages.length > 0 ? data.messages[0] : "Some Error";
@@ -80,8 +80,8 @@ export const login = (email: string, password: string, rememberMe: boolean, capt
 }
 
 export const getCaptchaUrl = () => async (dispatch: any) => {
-    const response = await securityAPI.getCaptchaUrl();
-        const captchaUrl = response.data.url;
+    const data = await securityAPI.getCaptchaUrl();
+        const captchaUrl = data.url;
         dispatch(getCaptchaUrlSuccess(captchaUrl));
 }
 

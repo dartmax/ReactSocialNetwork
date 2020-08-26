@@ -2,13 +2,13 @@ import {getAuthUserData} from "./auth-reducer";
 
 const INITIALIZED_SUCCESS = 'INITIALIZED_SUCCESS';
 
-export type initialStateType = {
-    initialized: boolean,
-};
 
-let initialState: initialStateType = {
+let initialState = {
     initialized: false,
 };
+export type initialStateType = typeof initialState
+
+
 
 export const appReducer = (state = initialState, action: any): initialStateType => {
     switch (action.type){
