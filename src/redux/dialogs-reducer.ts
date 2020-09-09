@@ -1,4 +1,4 @@
-import {DialogActionsClassKey} from "@material-ui/core";
+import {InferActionsTypes} from "./redux-store";
 
 const SEND_MESSAGE = 'SEND-MESSAGE';
 
@@ -28,10 +28,7 @@ let initialState = {
     ] as Array<DialogType>,
 }
 
-
-export type initialStateType = typeof initialState
-
-const dialogsReducer = (state = initialState, action: any): initialStateType  => {
+const dialogsReducer = (state = initialState, action: ActionsType): initialStateType  => {
     switch(action.type) {
         case SEND_MESSAGE:
             let body = action.newMessageBody;
@@ -44,13 +41,13 @@ const dialogsReducer = (state = initialState, action: any): initialStateType  =>
     }
 };
 
-type sendMessageCreatorActionType = {
-    type: typeof SEND_MESSAGE
-    newMessageBody: string
+export const actions = {
+    sendMessage: (newMessageBody: string) => ({
+        type: SEND_MESSAGE, newMessageBody
+    } as const)
 }
 
-export let sendMessageCreator = (newMessageBody: string): sendMessageCreatorActionType => ({
-    type: SEND_MESSAGE, newMessageBody
-});
-
 export default dialogsReducer;
+
+export type initialStateType = typeof initialState
+type ActionsType = InferActionsTypes<typeof actions>

@@ -1,4 +1,4 @@
-import {instance, APIResponseType, ResultCodesEnum, ResultCodeForCaptchaEnum} from "./api";
+import {instance, APIResponseType, ResultCodesEnum, ResultCodeForCaptchaEnum} from './api';
 
 
 type MeResponseDataType = {
@@ -17,7 +17,7 @@ export const authAPI = {
         return instance.post<APIResponseType<LoginResponseDataType, ResultCodesEnum | ResultCodeForCaptchaEnum>>(`auth/login`, {email, password, rememberMe, captcha})
             .then(res => res.data)
     },
-    logouts() {
+    logout() {
         return instance.delete(`auth/login`)
     },
 };

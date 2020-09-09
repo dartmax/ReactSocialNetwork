@@ -7,7 +7,7 @@ type sideBarReducerActipnType = {
     action: any
 }
 
-const sideBarReducer = (state = initialState, action: any): initialStateType => {
+const sideBarReducer = (state = initialState, action: sideBarReducerActipnType): initialStateType => {
     return state;
 };
 

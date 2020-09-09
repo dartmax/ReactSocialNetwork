@@ -1,7 +1,7 @@
 import React, {FC} from "react";
 import {InjectedFormProps, reduxForm} from "redux-form";
 import {Button} from '@material-ui/core';
-import {Input} from "../Common/FormsControls/FormsControls"
+import {GetStringKeys, Input} from "../Common/FormsControls/FormsControls"
 import {required} from "../utils/validators/validators";
 import {connect} from "react-redux";
 import {Redirect} from 'react-router-dom';
@@ -10,7 +10,7 @@ import styles from "../Common/FormsControls/FormsControls.module.css"
 import {createField} from "../Common/FormsControls/FormsControls"
 import {AppStateType} from "../redux/redux-store";
 
-type LoginFormOwnProps = {
+export type LoginFormOwnProps = {
     captchaUrl: string | null
 }
 
@@ -43,8 +43,7 @@ type MapStatePropsType = {
 }
 
 type MapDispatchPropsType = {
-    login: (email: string, password: string, rememberMe: boolean, captcha: string) =>void
-    isAuth: boolean
+    login: (email: string, password: string, rememberMe: boolean, captcha: string) => void
 }
 
 export type LoginFormValuesType = {
@@ -54,7 +53,7 @@ export type LoginFormValuesType = {
     email: string
 }
 
-type LoginFormValuesTypeKeys = Extract<keyof LoginFormValuesType, string>
+type LoginFormValuesTypeKeys = GetStringKeys<LoginFormValuesType>
 
 
 const Login: FC<MapStatePropsType & MapDispatchPropsType> = (props) => {
@@ -75,4 +74,5 @@ const mapStateToProps = (state: AppStateType): MapStatePropsType => ({
     captchaUrl: state.auth.captchaUrl,
     isAuth: state.auth.isAuth
 });
-export default connect(mapStateToProps, {login} )(LoginForm);
+// @ts-ignore
+export default connect(mapStateToProps, {login})(Login);

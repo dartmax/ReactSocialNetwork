@@ -2,6 +2,7 @@ import React, {FC} from "react";
 import PaginationComponent from "../../Common/Pagination/PaginationComponent";
 import User from "./User";
 import {UserType} from "../../types/types";
+import Preloader from "../../Common/Preloader/Preloader";
 
 type PropsType = {
     currentPage: number
@@ -22,8 +23,11 @@ let Users: FC<PropsType> = ({
   users,
   ...props
 }) => {
+    if (!PaginationComponent) {
+        return <Preloader/>
+    }
     return (<div>
-            <PaginationComponent currentPage={currentPage}
+        <PaginationComponent currentPage={currentPage}
                                  onPageChanged={onPageChanged}
                                  totalUsersCount={totalUsersCount}
                                  pageSize={pageSize}/>
