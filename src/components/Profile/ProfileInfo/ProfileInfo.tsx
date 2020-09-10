@@ -45,7 +45,6 @@ const ProfileInfo: FC<PropsType>= ({profile, status, isOwner, savePhoto, updateS
                 {editMode ?
                     <ProfileDataForm profile={profile} onSubmit={onSubmit}/>
                     : <ProfileData goToEditMode={()=>{setEditMode(true)}} profile={profile} isOwner={isOwner}/>}
-                <ProfileData profile={profile} goToEditMode={()=>{setEditMode(false)}} isOwner={isOwner}/>
                 <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
         </div>
