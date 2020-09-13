@@ -1,7 +1,9 @@
-import React from "react";
+import React, {FC} from "react";
 import '../../main.scss';
 
-let Preloader = () => {
+type PropsType = {}
+
+let Preloader: FC<PropsType> = () => {
     return <div>
         <div id="cube-loader">
             <div className="caption">

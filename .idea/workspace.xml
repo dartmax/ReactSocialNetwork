@@ -26,9 +26,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/hoc/to.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Pagination/PaginationComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Pagination/Paginator.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Pagination/Paginator.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Common/Preloader/Preloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Common/Preloader/Preloader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogsItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogItem/DialogsItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Message/Message.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -367,7 +375,8 @@
       <workItem from="1599560960209" duration="3858000" />
       <workItem from="1599638794490" duration="2659000" />
       <workItem from="1599665938275" duration="8197000" />
-      <workItem from="1599730444585" duration="732000" />
+      <workItem from="1599730444585" duration="9881000" />
+      <workItem from="1599811588293" duration="2581000" />
     </task>
     <servers />
   </component>
@@ -419,10 +428,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state width="2243" height="242" key="GridCell.Tab.0.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598462004571" />
-    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1591883213724">
+    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1599761569645">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1591883213724" />
+    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599761569645" />
     <state x="633" y="126" key="SettingsEditor" timestamp="1598818084882">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -431,10 +440,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="873" y="225" width="654" height="540" key="StructurePopup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595683993483" />
-    <state x="983" y="213" width="803" height="664" key="find.popup" timestamp="1599672737592">
+    <state x="983" y="213" width="803" height="664" key="find.popup" timestamp="1599765744163">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="983" y="213" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599672737592" />
+    <state x="983" y="213" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599765744163" />
     <state x="864" y="223" key="run.anything.popup" timestamp="1599670740128">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -443,9 +452,9 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="934" y="477" width="400" height="277" key="scopes/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598817793514" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599673034471">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599761369867">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599673034471" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599761369867" />
   </component>
 </project>
