@@ -3,19 +3,17 @@ html, body {
 }
 
 #cube-loader {
-    align-items: center;
     display: flex;
     height: 100%;
     width: 100%;
-    position: fixed;
+    position: inherit;
 & .caption {
       margin: 0 auto;
   }
 .cube-loader {
     width: 73px;
     height: 73px;
-    margin: 0 auto;
-    margin-top: 49px;
+    margin: 49px auto;
     position: relative;
     transform: rotateZ(45deg);
 

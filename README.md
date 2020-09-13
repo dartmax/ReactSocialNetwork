@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## To view this portfolio, make sure you are registered and logged in.
+Link for registration - [registration](https://social-network.samuraijs.com/account)
+
 ## Available Scripts
 
 In the project directory, you can run:

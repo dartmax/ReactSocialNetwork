@@ -6,7 +6,8 @@ import SocialJSApp from "./App";
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  // @ts-ignore
+  const linkElement = getByText(`getAllByText`);
   expect(linkElement).toBeInTheDocument();
 });
 
