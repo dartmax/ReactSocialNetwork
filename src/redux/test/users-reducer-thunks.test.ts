@@ -1,9 +1,9 @@
-import {follow} from '../users-reducer';
+import {actions, follow, unFollow} from '../users-reducer';
 import {usersAPI} from '../../api/users-api';
 import {APIResponseType, ResultCodesEnum} from "../../api/api";
 
 jest.mock('../../api/users-api')
-const usersAPIMock = usersAPI;
+const usersAPIMock = usersAPI as jest.Mocked<typeof usersAPI>;
 
 const result: APIResponseType = {
     resultCode: ResultCodesEnum.Success,
@@ -11,15 +11,35 @@ const result: APIResponseType = {
     data: {}
 }
 
-// @ts-ignore
 usersAPIMock.follow.mockReturnValue(Promise.resolve(result))
+usersAPIMock.unFollow.mockReturnValue(Promise.resolve(result))
 
-test("Ht", async () => {
-   const thunk = follow(1)
-    const dispatchMock = jest.fn()
+const dispatchMock = jest.fn()
+const getStateMock = jest.fn()
 
-   // @ts-ignore
-    await thunk(dispatchMock)
+beforeEach(()=>{
+    dispatchMock.mockClear()
+    getStateMock.mockClear()
+    usersAPIMock.follow.mockClear()
+    usersAPIMock.unFollow.mockClear()
+})
 
+test("success follow thunk", async () => {
+    const thunk = follow(1)
+
+    await thunk(dispatchMock, getStateMock, {})
     expect(dispatchMock).toBeCalledTimes(3)
+    expect(dispatchMock).toHaveBeenNthCalledWith(1, actions.toggleIsFollowingProgress(true, 1))
+    expect(dispatchMock).toHaveBeenNthCalledWith(2, actions.followSuccess(1))
+    expect(dispatchMock).toHaveBeenNthCalledWith(3, actions.toggleIsFollowingProgress(false, 1))
+});
+
+test("success unfollow thunk", async () => {
+    const thunk = unFollow(1)
+
+    await thunk(dispatchMock, getStateMock, {})
+    expect(dispatchMock).toBeCalledTimes(3)
+    expect(dispatchMock).toHaveBeenNthCalledWith(1, actions.toggleIsFollowingProgress(true, 1))
+    expect(dispatchMock).toHaveBeenNthCalledWith(2, actions.unFollowSuccess(1))
+    expect(dispatchMock).toHaveBeenNthCalledWith(3, actions.toggleIsFollowingProgress(false, 1))
 });

@@ -5,7 +5,7 @@ import {updateObjectArray} from '../utils/objectHelpers';
 import {UserType} from '../types/types';
 
 import {usersAPI} from '../api/users-api';
-import {APIResponseType, ResultCodesEnum} from "../api/api";
+import {APIResponseType} from "../api/api";
 
 
 let initialState = {
