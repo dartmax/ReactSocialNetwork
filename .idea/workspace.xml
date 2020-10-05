@@ -26,10 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersSearchForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/users-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/test/users-reducer-thunks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/test/users-reducer-thunks.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-selectors.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,19 +93,22 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/components/Users" />
-      <recent name="$PROJECT_DIR$/src/redux" />
-      <recent name="$PROJECT_DIR$/src/components/Test/Func" />
-      <recent name="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/Common/Pagination" />
       <recent name="$PROJECT_DIR$/src/Common" />
       <recent name="$PROJECT_DIR$/src/Common/Preloader" />
       <recent name="D:\Max\Web Academy\samuray\src\components\Profile" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/components/Users/UsersSearchForm.tsx" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/components/Users" />
+      <recent name="$PROJECT_DIR$/src/redux" />
+      <recent name="$PROJECT_DIR$/src/components/Test/Func" />
+      <recent name="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.success unfollow thunk">
@@ -371,7 +379,22 @@
       <workItem from="1600070797824" duration="839000" />
       <workItem from="1600157161671" duration="2343000" />
       <workItem from="1600243753442" duration="824000" />
-      <workItem from="1600330743176" duration="1598000" />
+      <workItem from="1600330743176" duration="2334000" />
+      <workItem from="1600420428874" duration="851000" />
+      <workItem from="1600457677616" duration="512000" />
+      <workItem from="1600598136250" duration="1182000" />
+      <workItem from="1600675604653" duration="1492000" />
+      <workItem from="1600762720505" duration="1196000" />
+      <workItem from="1600935227824" duration="1225000" />
+      <workItem from="1601021676974" duration="1303000" />
+      <workItem from="1601032496348" duration="920000" />
+      <workItem from="1601281524531" duration="1379000" />
+      <workItem from="1601300820812" duration="594000" />
+      <workItem from="1601301860234" duration="813000" />
+      <workItem from="1601368527094" duration="3625000" />
+      <workItem from="1601453865675" duration="8527000" />
+      <workItem from="1601540459403" duration="1407000" />
+      <workItem from="1601626886991" duration="1287000" />
     </task>
     <servers />
   </component>
@@ -483,10 +506,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="873" y="225" width="654" height="540" key="StructurePopup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595683993483" />
-    <state x="983" y="213" width="803" height="664" key="find.popup" timestamp="1600032904066">
+    <state x="983" y="213" width="809" height="664" key="find.popup" timestamp="1601380563527">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="983" y="213" width="803" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600032904066" />
+    <state x="983" y="213" width="809" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1601380563527" />
     <state x="864" y="223" key="run.anything.popup" timestamp="1599670740128">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -495,9 +518,9 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="934" y="477" width="400" height="277" key="scopes/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598817793514" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1599761369867">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1601485178184">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599761369867" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1601485178184" />
   </component>
 </project>

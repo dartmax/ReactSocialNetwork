@@ -15,6 +15,9 @@ let initialState = {
     currentPage: 1,
     isFetching: false,
     followingInProgress: [] as Array<number>, // array of users ids
+    filter: {
+        term: ""
+    }
 };
 
 const usersReducer = (state = initialState, action: ActionsTypes): initialStateType => {
@@ -44,6 +47,10 @@ const usersReducer = (state = initialState, action: ActionsTypes): initialStateT
         case 'TOGGLE_IS_FETCHING':
             return {
                 ...state, isFetching: action.isFetching
+            };
+        case 'SET_FILTER':
+            return {
+                ...state, filter: action.payload
             };
         case 'TOGGLE_IS_FOLLOWING_PROGRESS':
             return {
@@ -79,15 +86,20 @@ export const actions = {
     } as const),
     toggleIsFollowingProgress: (isFetching: boolean, userId: number) => ({
         type: 'TOGGLE_IS_FOLLOWING_PROGRESS', isFetching, userId
+    } as const),
+    setFilter: (term: string) => ({
+        type: 'SET_FILTER', payload: {term}
     } as const)
 }
 
 export const requestUsers = (page: number,
-                             pageSize: number): ThunkType => {
+                             pageSize: number, term: string): ThunkType => {
     return async (dispatch, getState) => {
         dispatch(actions.toggleIsFetching(true));
         dispatch(actions.setCurrentPage(page));
-        let data = await usersAPI.getUsers(page, pageSize);
+        dispatch(actions.setFilter(term));
+
+        let data = await usersAPI.getUsers(page, pageSize, term);
         dispatch(actions.toggleIsFetching(false));
         dispatch(actions.setUsers(data.items));
         dispatch(actions.setTotalUsersCount(data.totalCount));
@@ -120,5 +132,6 @@ export const unFollow = (userId: number): ThunkType => {
 export default usersReducer;
 
 export type initialStateType = typeof initialState
+export type FilterType = typeof initialState.filter
 type ActionsTypes = InferActionsTypes<typeof actions>
 type ThunkType = BaseThunkType<ActionsTypes>

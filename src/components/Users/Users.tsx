@@ -1,14 +1,17 @@
-import React, {FC} from "react";
-import PaginationComponent from "../../Common/Pagination/PaginationComponent";
-import User from "./User";
-import {UserType} from "../../types/types";
-import Preloader from "../../Common/Preloader/Preloader";
+import React, {FC} from 'react';
+import PaginationComponent from '../../Common/Pagination/PaginationComponent';
+import User from './User';
+import {UserType} from '../../types/types';
+import Preloader from '../../Common/Preloader/Preloader';
+import {UsersSearchForm} from "./UsersSearchForm";
+import {FilterType} from "../../redux/users-reducer";
 
 type PropsType = {
     currentPage: number
     pageSize: number
     totalUsersCount: number
     onPageChanged: (pageNumber: number) => void
+    onFilterChanged: (filter: FilterType) => void
     users: Array<UserType>
     followingInProgress: Array<number>
     unFollow: (userId: number) => void
@@ -27,6 +30,8 @@ let Users: FC<PropsType> = ({
         return <Preloader/>
     }
     return (<div>
+        <UsersSearchForm onFilterChanged={props.onFilterChanged} />
+
         <PaginationComponent currentPage={currentPage}
                                  onPageChanged={onPageChanged}
                                  totalUsersCount={totalUsersCount}
@@ -36,6 +41,9 @@ let Users: FC<PropsType> = ({
                               user={u}
                               unFollow={props.unFollow}
                               follow={props.follow}/> )}
+
     </div>)
 };
+
+
 export default Users;
