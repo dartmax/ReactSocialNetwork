@@ -2,12 +2,12 @@ import React, {Fragment, FC, ComponentType} from 'react';
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
 import {BrowserRouter, Redirect, Route, Switch, withRouter} from "react-router-dom";
-import UsersContainer from "./components/Users/UsersContainer";
+import {UsersPage} from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
 import TestList from "./components/Test/TestList";
 import {connect, Provider} from "react-redux";
 import {compose} from "redux";
-import LoginPage from "./Login/Login";
+import {LoginPage} from "./Login/Login";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./Common/Preloader/Preloader";
 import store, {AppStateType} from "./redux/redux-store";
@@ -24,7 +24,7 @@ type DispatchPropsType = {
 
 const SuspendedDialogs = withSuspense(DialogsContainer)
 const SuspendedProfile = withSuspense(ProfileContainer)
-const SuspendedUsers = withSuspense(() => <UsersContainer pageTitle={"My Friends"}/>)
+const SuspendedUsers = withSuspense(() => <UsersPage pageTitle={"My Friends"}/>)
 
 class App extends React.Component<MapPropsType & DispatchPropsType> {
 

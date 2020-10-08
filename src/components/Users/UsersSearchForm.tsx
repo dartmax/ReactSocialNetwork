@@ -1,10 +1,15 @@
-import {Field, Form, Formik} from "formik";
 import React, {FC} from "react";
+import {Field, Form, Formik} from "formik";
 import {FilterType} from "../../redux/users-reducer";
 
 const usersSearchFormValidate = (values: any) => {
-    const errors = {};
-    return errors;
+    const errors = {}
+    return errors
+}
+
+type FormType = {
+    term: string
+    friend: "null" | "true" | "false"
 }
 
 type PropsType = {
@@ -13,14 +18,18 @@ type PropsType = {
 
 export const UsersSearchForm: FC<PropsType> = React.memo((props) => {
 
-    const submit = (values: FilterType, {setSubmitting}: { setSubmitting: (isSubmitting: boolean) => void }) => {
-        props.onFilterChanged(values)
+    const submit = (values: FormType, {setSubmitting}: { setSubmitting: (isSubmitting: boolean) => void }) => {
+        const filter: FilterType = {
+            term: values.term,
+            friend: values.friend === "null" ? null : values.friend === "true" ? true : false
+        }
+        props.onFilterChanged(filter)
         setSubmitting(false)
     }
 
     return <div>
         <Formik
-            initialValues={{term: ''}}
+            initialValues={{term: '', friend: "null"}}
             validate={usersSearchFormValidate}
             onSubmit={submit}
         >
@@ -28,9 +37,9 @@ export const UsersSearchForm: FC<PropsType> = React.memo((props) => {
                 <Form>
                     <Field type="text" name="term"/>
                     <Field name="friend" as="select">
-                        <option value="">All People</option>
-                        <option value="">Only Followed</option>
-                        <option value="">Only Unfollowed</option>
+                        <option value="null">All</option>
+                        <option value="true">Only Followed</option>
+                        <option value="false">Only Unfollowed</option>
                     </Field>
                     <button type="submit" disabled={isSubmitting}>
                         Find
