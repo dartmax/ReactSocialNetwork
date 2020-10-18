@@ -27,14 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/users-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/users-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/User.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersSearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersSearchForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,7 +391,18 @@
       <workItem from="1601626886991" duration="1287000" />
       <workItem from="1601973331763" duration="1014000" />
       <workItem from="1602064167122" duration="8942000" />
-      <workItem from="1602148942712" duration="657000" />
+      <workItem from="1602148942712" duration="2064000" />
+      <workItem from="1602231664662" duration="722000" />
+      <workItem from="1602490262265" duration="1375000" />
+      <workItem from="1602580452458" duration="1560000" />
+      <workItem from="1602663480397" duration="1038000" />
+      <workItem from="1602664859546" duration="1382000" />
+      <workItem from="1602698834042" duration="448000" />
+      <workItem from="1602749903477" duration="753000" />
+      <workItem from="1602752577558" duration="8282000" />
+      <workItem from="1602837034824" duration="1148000" />
+      <workItem from="1602847287665" duration="1736000" />
+      <workItem from="1603048331012" duration="1181000" />
     </task>
     <servers />
   </component>
@@ -509,10 +514,10 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="873" y="225" width="654" height="540" key="StructurePopup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595683993483" />
-    <state x="983" y="213" width="809" height="664" key="find.popup" timestamp="1602103542996">
+    <state x="983" y="213" width="809" height="664" key="find.popup" timestamp="1602776597303">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="983" y="213" width="809" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1602103542996" />
+    <state x="983" y="213" width="809" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1602776597303" />
     <state x="864" y="223" key="run.anything.popup" timestamp="1599670740128">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
@@ -521,9 +526,9 @@
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
     <state x="934" y="477" width="400" height="277" key="scopes/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598817793514" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602102368203">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602772429539">
       <screen x="0" y="0" width="2560" height="1032" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1602102368203" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1602772429539" />
   </component>
 </project>
