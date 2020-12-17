@@ -1,4 +1,3 @@
-import React from 'react';
 import  profileReducer, {actions} from './profile-reducer';
 import {ProfileType} from "../types/types";
 

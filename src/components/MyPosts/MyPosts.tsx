@@ -10,7 +10,7 @@ export type MapPropsType = {
 export type DispatchPropsType = {
     addPost: (newPostText: string) => void
 }
-const MyPosts: FC<MapPropsType & DispatchPropsType> = props=> {
+const MyPosts: FC<MapPropsType & DispatchPropsType> = props => {
     let postElements =
         [...props.posts]
         .reverse()

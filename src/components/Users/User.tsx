@@ -38,8 +38,8 @@ const User: FC<PropsType> = ({user, followingInProgress, unFollow, follow}) => {
                     <div>{user.status}</div>
                 </span>
                 <span>
-                    <div>{'u.location.country'}</div>
-                    <div>{'u.location.city'}</div>
+                    <div>{'Ukraine'}</div>
+                    <div>{'Kyiv'}</div>
                 </span>
             </span>
         </div>)

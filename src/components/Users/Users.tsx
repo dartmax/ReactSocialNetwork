@@ -44,7 +44,7 @@ export const Users: FC<PropsType> = (props) => {
 
     useEffect(() => {
 
-        const parsed = queryString.parse(history.location.search.substr(1)) as  QueryParamsType
+        const parsed = queryString.parse(history.location.search.substr(1)) as QueryParamsType
         let actualPage = currentPage;
         let actualFilter = filter;
 

@@ -27,8 +27,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/profile-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/profile-api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MyPosts/MyPosts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersSearchForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersSearchForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +58,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Y5T5tuXyA23bIoydAFUsXCOB66" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -188,9 +193,9 @@
       <list>
         <item itemvalue="Jest.success unfollow thunk" />
         <item itemvalue="Jest.success follow thunk" />
-        <item itemvalue="Jest.Ht" />
-        <item itemvalue="Jest.Unnamed" />
         <item itemvalue="Jest.length of post should be increment" />
+        <item itemvalue="Jest.Unnamed" />
+        <item itemvalue="Jest.Ht" />
       </list>
     </recent_temporary>
   </component>
@@ -402,7 +407,67 @@
       <workItem from="1602752577558" duration="8282000" />
       <workItem from="1602837034824" duration="1148000" />
       <workItem from="1602847287665" duration="1736000" />
-      <workItem from="1603048331012" duration="1181000" />
+      <workItem from="1603048331012" duration="2370000" />
+      <workItem from="1603096373086" duration="768000" />
+      <workItem from="1603182751144" duration="1056000" />
+      <workItem from="1603269783620" duration="2679000" />
+      <workItem from="1603354708025" duration="1783000" />
+      <workItem from="1603385617882" duration="550000" />
+      <workItem from="1603441579303" duration="1478000" />
+      <workItem from="1603466988889" duration="774000" />
+      <workItem from="1603703199386" duration="968000" />
+      <workItem from="1603791191136" duration="879000" />
+      <workItem from="1603879033492" duration="948000" />
+      <workItem from="1603963973059" duration="739000" />
+      <workItem from="1604055874950" duration="437000" />
+      <workItem from="1604309185825" duration="1663000" />
+      <workItem from="1604329992467" duration="1146000" />
+      <workItem from="1604399499922" duration="7696000" />
+      <workItem from="1604482076088" duration="1328000" />
+      <workItem from="1604568831861" duration="3595000" />
+      <workItem from="1604657945219" duration="1084000" />
+      <workItem from="1604756656461" duration="697000" />
+      <workItem from="1604915566901" duration="3272000" />
+      <workItem from="1604999475709" duration="2494000" />
+      <workItem from="1605084742817" duration="2634000" />
+      <workItem from="1605176317476" duration="2377000" />
+      <workItem from="1605260426079" duration="1126000" />
+      <workItem from="1605450934600" duration="316000" />
+      <workItem from="1605517545583" duration="1122000" />
+      <workItem from="1605543879453" duration="1256000" />
+      <workItem from="1605550751685" duration="1159000" />
+      <workItem from="1605605404307" duration="553000" />
+      <workItem from="1605629106881" duration="554000" />
+      <workItem from="1605692315717" duration="3238000" />
+      <workItem from="1605781368578" duration="1183000" />
+      <workItem from="1605864681757" duration="1175000" />
+      <workItem from="1605962054727" duration="3521000" />
+      <workItem from="1606121867645" duration="2443000" />
+      <workItem from="1606145051436" duration="807000" />
+      <workItem from="1606212933120" duration="1803000" />
+      <workItem from="1606227136735" duration="1195000" />
+      <workItem from="1606295997247" duration="2546000" />
+      <workItem from="1606321652958" duration="12385000" />
+      <workItem from="1606382286694" duration="4629000" />
+      <workItem from="1606471747670" duration="2011000" />
+      <workItem from="1606727530469" duration="2797000" />
+      <workItem from="1606766835607" duration="1610000" />
+      <workItem from="1606818848651" duration="3473000" />
+      <workItem from="1606901790940" duration="2630000" />
+      <workItem from="1606986189374" duration="1494000" />
+      <workItem from="1607008946543" duration="682000" />
+      <workItem from="1607078726327" duration="885000" />
+      <workItem from="1607171423870" duration="537000" />
+      <workItem from="1607334503285" duration="944000" />
+      <workItem from="1607420177849" duration="1019000" />
+      <workItem from="1607430760940" duration="166000" />
+      <workItem from="1607507614089" duration="909000" />
+      <workItem from="1607596318066" duration="1349000" />
+      <workItem from="1607680362931" duration="3149000" />
+      <workItem from="1607937739878" duration="831000" />
+      <workItem from="1608023972567" duration="2624000" />
+      <workItem from="1608111100164" duration="1712000" />
+      <workItem from="1608199639543" duration="1935000" />
     </task>
     <servers />
   </component>
@@ -420,115 +485,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="100" y="100" width="2089" height="783" key="DiffContextDialog" timestamp="1597923021466">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="100" y="100" width="2089" height="783" key="DiffContextDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1597923021466" />
-    <state x="778" y="264" width="722" height="703" key="EditFileWatcherDialog" timestamp="1598818081209">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="778" y="264" width="722" height="703" key="EditFileWatcherDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598818081209" />
-    <state x="977" y="286" width="314" height="659" key="EnvironmentVariablesDialog" timestamp="1598818077227">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="977" y="286" width="314" height="659" key="EnvironmentVariablesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598818077227" />
-    <state x="922" y="264" width="424" height="484" key="FileChooserDialogImpl" timestamp="1598817727044">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="922" y="264" width="424" height="484" key="FileChooserDialogImpl/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598817727044" />
-    <state width="2514" height="258" key="GridCell.Tab.0.bottom" timestamp="1600033519038">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="258" key="GridCell.Tab.0.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600033519038" />
-    <state width="2514" height="258" key="GridCell.Tab.0.center" timestamp="1600033519038">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="258" key="GridCell.Tab.0.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600033519038" />
-    <state width="2514" height="258" key="GridCell.Tab.0.left" timestamp="1600033519038">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="258" key="GridCell.Tab.0.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600033519038" />
-    <state width="2514" height="258" key="GridCell.Tab.0.right" timestamp="1600033519038">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="258" key="GridCell.Tab.0.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600033519038" />
-    <state width="2514" height="398" key="GridCell.Tab.1.bottom" timestamp="1600017545286">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.1.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545286" />
-    <state width="2514" height="398" key="GridCell.Tab.1.center" timestamp="1600017545286">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.1.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545286" />
-    <state width="2514" height="398" key="GridCell.Tab.1.left" timestamp="1600017545286">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.1.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545286" />
-    <state width="2514" height="398" key="GridCell.Tab.1.right" timestamp="1600017545286">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.1.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545286" />
-    <state width="2514" height="398" key="GridCell.Tab.2.bottom" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.2.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state width="2514" height="398" key="GridCell.Tab.2.center" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.2.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state width="2514" height="398" key="GridCell.Tab.2.left" timestamp="1600017545286">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.2.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545286" />
-    <state width="2514" height="398" key="GridCell.Tab.2.right" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.2.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state width="2514" height="398" key="GridCell.Tab.3.bottom" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.3.bottom/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state width="2514" height="398" key="GridCell.Tab.3.center" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.3.center/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state width="2514" height="398" key="GridCell.Tab.3.left" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.3.left/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state width="2514" height="398" key="GridCell.Tab.3.right" timestamp="1600017545287">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state width="2514" height="398" key="GridCell.Tab.3.right/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1600017545287" />
-    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog" timestamp="1599761569645">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="932" y="156" width="527" height="720" key="RollbackChangesDialog/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599761569645" />
-    <state x="633" y="126" key="SettingsEditor" timestamp="1598818084882">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="633" y="126" key="SettingsEditor/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598818084882" />
-    <state x="873" y="225" width="654" height="540" key="StructurePopup" timestamp="1595683993483">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="873" y="225" width="654" height="540" key="StructurePopup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1595683993483" />
-    <state x="983" y="213" width="809" height="664" key="find.popup" timestamp="1602776597303">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="983" y="213" width="809" height="664" key="find.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1602776597303" />
-    <state x="864" y="223" key="run.anything.popup" timestamp="1599670740128">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="864" y="223" key="run.anything.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1599670740128" />
-    <state x="934" y="477" width="400" height="277" key="scopes" timestamp="1598817793514">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="934" y="477" width="400" height="277" key="scopes/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1598817793514" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602772429539">
-      <screen x="0" y="0" width="2560" height="1032" />
-    </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1032/2560.0.1920.1080@0.0.2560.1032" timestamp="1602772429539" />
   </component>
 </project>

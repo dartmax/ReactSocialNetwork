@@ -20,6 +20,7 @@ let initialState = {
         friend: null as null | boolean
     }
 };
+console.log("-> initialState", initialState.users);
 
 const usersReducer = (state = initialState, action: ActionsTypes): initialStateType => {
     switch (action.type) {

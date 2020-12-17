@@ -21,7 +21,7 @@ export const appReducer = (state = initialState, action: ActionsType): initialSt
             return state;
     }
 };
-
+debugger;
 
 export const actions = {
     initializedSuccess: () => ({type: 'INITIALIZED_SUCCESS'} as const),
