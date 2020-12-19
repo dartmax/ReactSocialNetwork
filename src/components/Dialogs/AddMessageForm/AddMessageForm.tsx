@@ -17,7 +17,7 @@ const AddMessageForm: FC<InjectedFormProps<NewMessageFormValuesType, PropsType> 
               {createField<NewMessageFormValuesKeysType>("Add your message", "newMessageBody", [required, maxLength50], Textarea)}
             </div>
             <div>
-                <Button variant="outlined">Send</Button>
+                <Button variant="outlined" onClick={props.handleSubmit}>Send</Button>
             </div>
         </form>
     )

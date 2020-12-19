@@ -29,5 +29,3 @@ export const profileAPI = {
         return instance.put<APIResponseType>(`profile`, profile).then(res => res.data);
     }
 };
-
-debugger;
