@@ -1,11 +1,11 @@
-import React, {FC, ComponentType, ReactNode} from 'react';
+import React, {FC, ComponentType} from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
 import {BrowserRouter, NavLink, Redirect, Route, Switch, withRouter} from "react-router-dom";
 import {UsersPage} from "./components/Users/UsersContainer";
 
 import TestList from "./components/Test/TestList";
-import {connect, Provider} from "react-redux";
+import {connect, Provider, useSelector} from "react-redux";
 import {compose} from "redux";
 import {LoginPage} from "./Login/Login";
 import {initializeApp} from "./redux/app-reducer";
@@ -18,6 +18,7 @@ import {UserOutlined, LaptopOutlined, NotificationOutlined} from '@ant-design/ic
 import s from "./components/Navbar/Navbar.module.css";
 import {AppHeader} from "./components/Header/Header";
 import {ProfileType} from "./types/types";
+import {selectIsAuth} from "./redux/auth-selectors";
 
 const {SubMenu} = Menu;
 const {Content, Footer, Sider} = Layout;
@@ -25,6 +26,7 @@ const {Content, Footer, Sider} = Layout;
 
 const DialogsContainer = React.lazy(() => import ("./components/Dialogs/DialogsContainer"));
 const ProfileContainer = React.lazy(() => import ("./components/Profile/ProfileContainer"));
+const ChatPage = React.lazy(() => import ("./pages/Chat/ChatPage"));
 
 type MapPropsType = ReturnType<typeof mapStateToProps>
 type DispatchPropsType = {
@@ -34,7 +36,9 @@ type DispatchPropsType = {
 
 const SuspendedDialogs = withSuspense(DialogsContainer)
 const SuspendedProfile = withSuspense(ProfileContainer)
+const SuspendedChatPage = withSuspense(ChatPage)
 const SuspendedUsers = withSuspense(() => <UsersPage pageTitle={"My Friends"}/>)
+const SuspendedLogin = withSuspense(() => <LoginPage />)
 
 class App extends React.Component<MapPropsType & DispatchPropsType> {
   catchAllUnhandledErrors = (e: PromiseRejectionEvent) => {
@@ -73,18 +77,29 @@ class App extends React.Component<MapPropsType & DispatchPropsType> {
               >
                 <Menu.Item key="1"><NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink></Menu.Item>
                 <Menu.Item key="2"><NavLink to="/users" activeClassName={s.activeLink}>Users</NavLink></Menu.Item>
-                <Menu.Item key="5"><NavLink to="/dialogs" activeClassName={s.activeLink}>Messages</NavLink></Menu.Item>
+                <Menu.Item key="3"><NavLink to="/dialogs" activeClassName={s.activeLink}>Dialogs</NavLink></Menu.Item>
+                <Menu.Item key="4"><NavLink to="/chat" activeClassName={s.activeLink}>Chat</NavLink></Menu.Item>
               </Menu>
             </Sider>
             <Content style={{padding: '0 24px', minHeight: 280}}>
               <Switch>
-                <Route exact path='/' render={() => <Redirect to={"/profile"}/>}/>
-                <Route path='/dialogs' render={() => <SuspendedDialogs/>}/>
-                <Route path='/profile/:userId?' render={() => <SuspendedProfile/>}/>
-                <Route path='/users' render={() => <SuspendedUsers/>}/>
-                <Route path='/login' render={() => <LoginPage/>}/>
-                <Route path='/test' render={() => <TestList/>}/>
-                <Route path='*' render={() => <SuspendedUsers/>}/>
+                {this.props.isAuth ?
+                  <div>
+                    <Route exact path='/' render={() => <Redirect to={"/profile"}/>}/>
+                    <Route path='/dialogs' render={() => <SuspendedDialogs/>}/>
+                    <Route path='/profile/:userId?' render={() => <SuspendedProfile/>}/>
+                    <Route path='/users' render={() => <SuspendedUsers/>}/>
+                    <Route path='/login' render={() => <LoginPage/>}/>
+                    <Route path='/chat' render={() => <SuspendedChatPage/>}/>
+                    {/*<Route path='*' render={() => <SuspendedUsers/>}/>*/}
+                  </div>
+                   :
+                  <div>
+                    <Route exact path='/' render={() => <Redirect to={"/users"}/>}/>
+                    <Route path='/users' render={() => <SuspendedUsers/>}/>
+                    <Route path='*' render={() => <SuspendedLogin/>}/>
+                  </div>
+                }
 
                 {/*<Route path='/music' component={Music}/>*/}
                 {/*<Route path='/settings' component={Settings}/>*/}
@@ -92,7 +107,7 @@ class App extends React.Component<MapPropsType & DispatchPropsType> {
             </Content>
           </Layout>
         </Content>
-        <Footer style={{textAlign: 'center'}}>SocialNetwork ©2020 github.com/dartmax</Footer>
+        <Footer style={{textAlign: 'center'}}>Developer Social ©2020 github.com/dartmax</Footer>
       </Layout>
       // <Fragment>
       //     <div className='app-wrapper'>
@@ -110,6 +125,7 @@ class App extends React.Component<MapPropsType & DispatchPropsType> {
 
 const mapStateToProps = (state: AppStateType) => ({
   initialized: state.app.initialized,
+  isAuth: state.auth.isAuth,
 })
 
 let AppContainer = compose<ComponentType>(
@@ -123,5 +139,5 @@ const SocialJSApp: FC = () => {
     </Provider>
   </BrowserRouter>
 }
-debugger;
+
 export default SocialJSApp;

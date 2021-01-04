@@ -26,21 +26,21 @@ export const AppHeader: FC<MapPropsType> = (props) => {
   const {Header} = Layout
   return <Header className="header">
     <Row>
-      <Col span={20}>
+      <Col span={22}>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
           <div key="1">Developer Social</div>
         </Menu>
       </Col>
 
       {isAuth
-        ?<> <Col span={1}>
-            <img src={userPhoto} alt={login || ""} style={{backgroundColor: '#87d068', width: '40px', borderRadius: '25px'}} />
+        ?<> <Col span={1} style={{textAlign: 'right', paddingRight: '10px'}}>
+            <img src={userPhoto} alt={login || ""} style={{width: '35px', borderRadius: '25px'}} />
         </Col>
-          <Col span={3}>
+          <Col span={1} style={{paddingLeft: '10px'}}>
         <Button onClick={logoutCallback}>Log out</Button>
           </Col>
         </>
-        : <Col span={4}>
+        : <Col span={2} style={{textAlign: 'right', paddingRight: '10px'}}>
           <Button>
             <Link {...to('/login')}>Login</Link>
           </Button>
@@ -60,4 +60,3 @@ export const AppHeader: FC<MapPropsType> = (props) => {
   //     </div>
   // </header>
 };
-debugger;
