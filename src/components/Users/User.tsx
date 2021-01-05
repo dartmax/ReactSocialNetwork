@@ -7,11 +7,11 @@ import {UserType} from "../../types/types";
 type PropsType = {
     user: UserType
     followingInProgress: Array<number>
-    unFollow: (userId: number) => void
-    follow: (userId: number) => void
+    unFollowUser: (userId: number) => void
+    followUser: (userId: number) => void
 }
 
-const User: FC<PropsType> = ({user, followingInProgress, unFollow, follow}) => {
+const User: FC<PropsType> = ({user, followingInProgress, unFollowUser, followUser}) => {
      return (
         <div>
             <span>
@@ -24,11 +24,11 @@ const User: FC<PropsType> = ({user, followingInProgress, unFollow, follow}) => {
                     {user.followed
                         ? <button disabled={followingInProgress.some(id => id === user.id)}
                                   onClick={() => {
-                                      unFollow(user.id)
+                                    unFollowUser(user.id)
                                   }}>
                             unFollow</button>
                         : <button disabled={followingInProgress.some(id => id === user.id)}
-                                  onClick={() => {follow(user.id)}}>
+                                  onClick={() => {followUser(user.id)}}>
                             Follow</button>}
                 </div>
             </span>

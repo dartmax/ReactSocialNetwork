@@ -26,11 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/User.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/User.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -473,7 +472,8 @@
       <workItem from="1609235894959" duration="1348000" />
       <workItem from="1609319148336" duration="3031000" />
       <workItem from="1609347930840" duration="846000" />
-      <workItem from="1609773014795" duration="8770000" />
+      <workItem from="1609773014795" duration="9974000" />
+      <workItem from="1609855317254" duration="5769000" />
     </task>
     <servers />
   </component>

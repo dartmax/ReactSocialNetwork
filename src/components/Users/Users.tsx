@@ -4,7 +4,7 @@ import PaginationComponent from '../../Common/Pagination/PaginationComponent';
 import User from './User';
 import Preloader from '../../Common/Preloader/Preloader';
 import {UsersSearchForm} from "./UsersSearchForm";
-import {FilterType, requestUsers} from "../../redux/users-reducer";
+import {FilterType, follow, requestUsers, unFollow} from "../../redux/users-reducer";
 import {
     getCurrentPage,
     getFollowingInProgress,
@@ -76,11 +76,11 @@ export const Users: FC<PropsType> = (props) => {
         dispatch(requestUsers(1, pageSize, filter));
     }
 
-    const unFollow = (userId: number) => {
-        dispatch(unFollow(userId))
+    const unFollowUser = (userId: number) => {
+        dispatch(unFollow(userId));
     }
-    const follow = (userId: number) => {
-        dispatch(follow(userId))
+    const followUser = (userId: number) => {
+        dispatch(follow(userId));
     }
 
 
@@ -98,8 +98,8 @@ export const Users: FC<PropsType> = (props) => {
         {users.map(u => <User key={u.id}
                               followingInProgress={followingInProgress}
                               user={u}
-                              unFollow={unFollow}
-                              follow={follow}/> )}
+                              unFollowUser={unFollowUser}
+                              followUser={followUser}/> )}
 
     </div>)
 };

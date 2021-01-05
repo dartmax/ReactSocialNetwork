@@ -1,6 +1,5 @@
 import React, {FC} from "react";
 import {InjectedFormProps, reduxForm} from "redux-form";
-import {Button} from '@material-ui/core';
 import {GetStringKeys, Input} from "../Common/FormsControls/FormsControls"
 import {required} from "../utils/validators/validators";
 import {useDispatch, useSelector} from "react-redux";
@@ -9,6 +8,7 @@ import styles from "../Common/FormsControls/FormsControls.module.css"
 import {createField} from "../Common/FormsControls/FormsControls"
 import {AppStateType} from "../redux/redux-store";
 import {login} from "../redux/auth-reducer";
+import {Button} from "antd";
 
 export type LoginFormOwnProps = {
     captchaUrl: string | null
@@ -29,7 +29,7 @@ const LoginForm: FC<InjectedFormProps<LoginFormValuesType, LoginFormOwnProps> & 
                 {error}
             </div>}
             <div>
-                <Button variant="outlined">Login</Button>
+                <Button onClick={handleSubmit}>Login</Button>
             </div>
         </form>
     )
