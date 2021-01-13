@@ -1,6 +1,6 @@
-[https://dartmax.github.io/ReactSocialNetwork/](https://dartmax.github.io/ReactSocialNetwork/)
-
 # Pet project: ReactSocialNetwork
+
+[https://dartmax.github.io/ReactSocialNetwork/](https://dartmax.github.io/ReactSocialNetwork/)
 
 ### `The main task of the project:`
 Practice of using React, Redux and related npm packages, create social network with simplification of functionality

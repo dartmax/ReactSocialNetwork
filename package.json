@@ -2,7 +2,7 @@
   "name": "samuray",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dartmax.github.io/reactSocialnetwork",
+  "homepage": "https://dartmax.github.io/ReactSocialNetwork",
   "dependencies": {
     "@material-ui/core": "^4.9.4",
     "@testing-library/jest-dom": "^4.2.4",
