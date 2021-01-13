@@ -1,3 +1,5 @@
+[https://dartmax.github.io/ReactSocialNetwork/](https://dartmax.github.io/ReactSocialNetwork/)
+
 # Pet project: ReactSocialNetwork
 
 ### `The main task of the project:`
@@ -5,7 +7,7 @@ Practice of using React, Redux and related npm packages, create social network w
 ### `Description of the project:`
 The social network ReactSocialNetwork is written on the basis of [Create React App](https://github.com/facebook/create-react-app),  has 5 pages: login, profile, messages, users and live chat, routing and redirects are configured. The entire application is written using a third-party API, including the authorization module. Event handling methods and work with asynchronous requests to the server through axios were actively used. Gradually typing code using TypeScript
 
-##### Functional:
+##### Functionality:
 * login:
     * Authorization through and logout through a third-party API <br/>
       Guest Log-In:<br/>
