@@ -92,7 +92,7 @@ type ContaxtPropsType = {
   contactValue: string
 }
 export const Contact: FC<ContaxtPropsType> = ({contactTitle, contactValue}) => {
-  return <div className={s.contact}><b>{contactTitle}</b>: {contactValue}</div>
+  return contactTitle !== 'vk' ? <div className={s.contact}><b>{contactTitle}</b>: {contactValue}</div> : null
 }
 
 export default ProfileInfo;

@@ -1,7 +1,7 @@
 import React, {FC} from "react";
 import {InjectedFormProps, reduxForm} from "redux-form";
 import {createField, Textarea} from "../../../Common/FormsControls/FormsControls";
-import {Button} from '@material-ui/core';
+import {Button} from 'antd';
 import {maxLengthCreator, required} from "../../../utils/validators/validators";
 import {NewMessageFormValuesType} from "../Dialogs";
 
@@ -17,7 +17,7 @@ const AddMessageForm: FC<InjectedFormProps<NewMessageFormValuesType, PropsType> 
               {createField<NewMessageFormValuesKeysType>("Add your message", "newMessageBody", [required, maxLength50], Textarea)}
             </div>
             <div>
-                <Button variant="outlined" onClick={props.handleSubmit}>Send</Button>
+                <Button onClick={props.handleSubmit}>Send</Button>
             </div>
         </form>
     )

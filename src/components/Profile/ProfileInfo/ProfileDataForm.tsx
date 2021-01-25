@@ -1,5 +1,5 @@
 import React, {FC} from "react";
-import {Button} from "@material-ui/core";
+import {Button} from "antd";
 import {createField, GetStringKeys, Input, Textarea} from "../../../Common/FormsControls/FormsControls";
 import {InjectedFormProps, reduxForm} from "redux-form";
 import Checkbox from "@material-ui/core/Checkbox";
@@ -15,7 +15,7 @@ type ProfileTypeKeys = GetStringKeys<ProfileType>
 
 const ProfileDataForm: FC<InjectedFormProps<ProfileType, PropsType> & PropsType> = ({handleSubmit, profile, error}) => {
   return <form onSubmit={handleSubmit}>
-    <div><Button variant="outlined">Save</Button></div>
+    <div><Button onClick={handleSubmit}>Save</Button></div>
     {error && <div className={styles.formSummaryError}>
       {error}
     </div>}

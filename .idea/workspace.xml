@@ -27,7 +27,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/AddMessageForm/AddMessageForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/AddMessageForm/AddMessageForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -480,6 +483,17 @@
       <workItem from="1610476054251" duration="1520000" />
       <workItem from="1610529537905" duration="583000" />
       <workItem from="1610532041748" duration="1090000" />
+      <workItem from="1610618367618" duration="1193000" />
+      <workItem from="1610639641379" duration="994000" />
+      <workItem from="1610657730140" duration="1653000" />
+      <workItem from="1610704019306" duration="814000" />
+      <workItem from="1610961671204" duration="1817000" />
+      <workItem from="1611051042545" duration="3655000" />
+      <workItem from="1611134310802" duration="3075000" />
+      <workItem from="1611220275898" duration="2456000" />
+      <workItem from="1611309452921" duration="685000" />
+      <workItem from="1611311525957" duration="4252000" />
+      <workItem from="1611566974945" duration="2322000" />
     </task>
     <servers />
   </component>

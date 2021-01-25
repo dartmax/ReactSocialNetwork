@@ -47,6 +47,13 @@ const Message: FC<{message: ChatMessageType}> = ({message}) => {
 
 const AddMessageForm: FC = () => {
   const [message, setMessage] = useState('')
+  const [readyStatus, setReadyStatus] = useState<'pending' | 'ready'>('pending')
+  useEffect(() => {
+    ws.addEventListener('open', () =>{
+      setReadyStatus('ready')
+    })
+  })
+
   const sendMessage = () => {
     if(!message) {
       return;
@@ -54,12 +61,13 @@ const AddMessageForm: FC = () => {
     ws.send(message);
     setMessage('');
   }
+
   return <div>
     <div>
       <textarea onChange={(e) => setMessage(e.currentTarget.value)} value={message}/>
     </div>
     <div>
-      <button onClick={sendMessage}>Send</button>
+      <button disabled={readyStatus !== 'ready'} onClick={sendMessage}>Send</button>
     </div>
   </div>
 }
