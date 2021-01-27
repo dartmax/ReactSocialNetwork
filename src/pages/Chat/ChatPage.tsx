@@ -1,13 +1,9 @@
 import React, {FC, useEffect, useState} from "react";
+import {ChatMessageType} from "../../api/chat-api";
+import {useDispatch, useSelector} from "react-redux";
+import {sendMessage, startMessagesListening, stopMessagesListening} from "../../redux/chat-reducer";
+import {AppStateType} from "../../redux/redux-store";
 
-const ws = new WebSocket('wss://social-network.samuraijs.com/handlers/ChatHandler.ashx');
-
-export type ChatMessageType = {
-  message: string
-  photo: string
-  userId: number
-  userName: string
-}
 
 const ChatPage: FC = () => {
   return <div>
@@ -16,6 +12,17 @@ const ChatPage: FC = () => {
 }
 
 const Chat: FC = () => {
+
+  const dispatch = useDispatch();
+
+
+  useEffect(() => {
+    dispatch(startMessagesListening());
+    return () => {
+      dispatch(stopMessagesListening())
+    }
+  }, [])
+
   return <div>
     <Messages />
     <AddMessageForm />
@@ -23,14 +30,7 @@ const Chat: FC = () => {
 }
 
 const Messages: FC = () => {
-  const [messages, setMessages] = useState<ChatMessageType[]>([]);
-  useEffect(() => {
-    ws.addEventListener('message', (e: MessageEvent) => {
-      const newMesseges = JSON.parse(e.data);
-      setMessages((prevMessages) => [...prevMessages, ...newMesseges]);
-    })
-  }, []);
-
+  const messages = useSelector((state: AppStateType) => state.chat.messages);
   return <div style={{ height: "400px", overflowY: "auto"}}>
     {messages.map((m, index) => <Message key={index} message={m}/>)}
   </div>
@@ -46,19 +46,15 @@ const Message: FC<{message: ChatMessageType}> = ({message}) => {
 }
 
 const AddMessageForm: FC = () => {
-  const [message, setMessage] = useState('')
-  const [readyStatus, setReadyStatus] = useState<'pending' | 'ready'>('pending')
-  useEffect(() => {
-    ws.addEventListener('open', () =>{
-      setReadyStatus('ready')
-    })
-  })
+  const [message, setMessage] = useState('');
+  // const [readyStatus, setReadyStatus] = useState<'pending' | 'ready'>('pending')
+  const dispatch = useDispatch()
 
-  const sendMessage = () => {
+  const sendMessageHandler = () => {
     if(!message) {
       return;
     }
-    ws.send(message);
+    dispatch(sendMessage(message));
     setMessage('');
   }
 
@@ -67,7 +63,7 @@ const AddMessageForm: FC = () => {
       <textarea onChange={(e) => setMessage(e.currentTarget.value)} value={message}/>
     </div>
     <div>
-      <button disabled={readyStatus !== 'ready'} onClick={sendMessage}>Send</button>
+      <button disabled={false} onClick={sendMessageHandler}>Send</button>
     </div>
   </div>
 }

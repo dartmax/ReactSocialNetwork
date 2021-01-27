@@ -486,7 +486,7 @@
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
                           <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
                         </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message wsChannel-normal text-left" style="border-left: 1px solid transparent">
                           On vacation
                         </div>
                       </button>
@@ -494,7 +494,7 @@
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
                           <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
                         </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message wsChannel-normal text-left" style="border-left: 1px solid transparent">
                           Out sick
                         </div>
                       </button>
@@ -504,7 +504,7 @@
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
                           <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
                         </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message wsChannel-normal text-left" style="border-left: 1px solid transparent">
                           Working from home
                         </div>
                       </button>
@@ -512,7 +512,7 @@
                         <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
                           <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
                         </div>
-                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message wsChannel-normal text-left" style="border-left: 1px solid transparent">
                           Focusing
                         </div>
                       </button>
@@ -547,34 +547,34 @@
 
     <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
       <li>
-        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
+        <button type="button" class="btn-link dropdown-item js-user-status-expire-button wsChannel-normal" title="Never">
           <span class="d-inline-block text-bold mb-1">Never</span>
           <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
         </button>
       </li>
       <li class="dropdown-divider" role="none"></li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2020-03-27T12:34:27+02:00">
+          <button type="button" class="btn-link dropdown-item wsChannel-normal js-user-status-expire-button" title="in 30 minutes" value="2020-03-27T12:34:27+02:00">
             in 30 minutes
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2020-03-27T13:04:27+02:00">
+          <button type="button" class="btn-link dropdown-item wsChannel-normal js-user-status-expire-button" title="in 1 hour" value="2020-03-27T13:04:27+02:00">
             in 1 hour
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2020-03-27T16:04:27+02:00">
+          <button type="button" class="btn-link dropdown-item wsChannel-normal js-user-status-expire-button" title="in 4 hours" value="2020-03-27T16:04:27+02:00">
             in 4 hours
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2020-03-27T23:59:59+02:00">
+          <button type="button" class="btn-link dropdown-item wsChannel-normal js-user-status-expire-button" title="today" value="2020-03-27T23:59:59+02:00">
             today
           </button>
         </li>
         <li>
-          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2020-03-29T23:59:59+03:00">
+          <button type="button" class="btn-link dropdown-item wsChannel-normal js-user-status-expire-button" title="this week" value="2020-03-29T23:59:59+03:00">
             this week
           </button>
         </li>

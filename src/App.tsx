@@ -42,7 +42,7 @@ const SuspendedLogin = withSuspense(() => <LoginPage />)
 
 class App extends React.Component<MapPropsType & DispatchPropsType> {
   catchAllUnhandledErrors = (e: PromiseRejectionEvent) => {
-    alert("promiseRejectionEvent")
+    console.warn("promiseRejectionEvent");
   }
 
   componentDidMount() {

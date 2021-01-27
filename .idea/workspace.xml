@@ -26,10 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/chat-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/AddMessageForm/AddMessageForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/AddMessageForm/AddMessageForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/spinning-circles.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/spinning-circles.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +43,8 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -493,7 +494,12 @@
       <workItem from="1611220275898" duration="2456000" />
       <workItem from="1611309452921" duration="685000" />
       <workItem from="1611311525957" duration="4252000" />
-      <workItem from="1611566974945" duration="2322000" />
+      <workItem from="1611566974945" duration="6952000" />
+      <workItem from="1611582746876" duration="5275000" />
+      <workItem from="1611652238029" duration="1044000" />
+      <workItem from="1611657207708" duration="1279000" />
+      <workItem from="1611688744975" duration="830000" />
+      <workItem from="1611739607447" duration="856000" />
     </task>
     <servers />
   </component>

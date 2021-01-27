@@ -1,7 +1,7 @@
 // plain object   // POCO\POJO
 
 let man = {
-    name: 'Dmitry',
+    name: 'Max',
     age: 31,
     sayName() {
         alert("My name is " + this.name);
@@ -17,7 +17,7 @@ man.sayName();
 let content = 'sds';
 
 let page = {
-    title: 'samuraiJS',
+    title: 'js',
     content: ``,
 
     render() {
@@ -34,7 +34,7 @@ page.content = `<div>Content about React JS</div>`;
 page.render();
 
 let page2 = {
-    title: 'samuraiJS',
+    title: 'JS2',
     _content: ``,
     setContent(value) {
         //if (value is ok??)
