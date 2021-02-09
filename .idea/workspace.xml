@@ -26,12 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b940762d-97da-445c-a497-862f80ed2245" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/chat-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/store/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/spinning-circles.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/spinning-circles.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/chat-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/chat-api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Chat/ChatPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/chat-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/chat-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -500,6 +498,14 @@
       <workItem from="1611657207708" duration="1279000" />
       <workItem from="1611688744975" duration="830000" />
       <workItem from="1611739607447" duration="856000" />
+      <workItem from="1611826790249" duration="1513000" />
+      <workItem from="1611913548087" duration="1982000" />
+      <workItem from="1611922614235" duration="1032000" />
+      <workItem from="1611945518503" duration="441000" />
+      <workItem from="1612431523540" duration="1739000" />
+      <workItem from="1612516117960" duration="2119000" />
+      <workItem from="1612775911929" duration="3986000" />
+      <workItem from="1612864939386" duration="1617000" />
     </task>
     <servers />
   </component>
